@@ -41,7 +41,7 @@ public class UserServiceImpl implements UserService {
                         .state(addressDto.getState())
                         .zip(addressDto.getZip())
                         .country(addressDto.getCountry())
-                        .isDefault(addressDto.isDefault())
+                        .isDefault(addressDto.getIsDefault())
                         .build()
         )).toList();
         user.setAddresses(address);
@@ -81,7 +81,7 @@ public class UserServiceImpl implements UserService {
                 .state(userDto.getAddresses().getFirst().getState())
                 .zip(userDto.getAddresses().getFirst().getZip())
                 .country(userDto.getAddresses().getFirst().getCountry())
-                .isDefault(userDto.getAddresses().getFirst().isDefault())
+                .isDefault(userDto.getAddresses().getFirst().getIsDefault())
                 .createdAt(LocalDateTime.now())
                 .updatedAt(LocalDateTime.now())
                 .build();
@@ -108,7 +108,7 @@ public class UserServiceImpl implements UserService {
                         .state(address.getState())
                         .zip(address.getZip())
                         .country(address.getCountry())
-                        .isDefault(address.isDefault())
+                        .isDefault(address.getIsDefault())
                         .build())
                         .toList())
                 .build();

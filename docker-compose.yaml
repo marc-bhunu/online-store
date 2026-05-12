@@ -8,3 +8,11 @@ services:
       POSTGRES_DB: user_db
     ports:
       - "5432:5432"
+  mongodb:
+    image: 'mongo:latest'
+    environment:
+      - 'MONGO_INITDB_DATABASE=cart'
+      - 'MONGO_INITDB_ROOT_PASSWORD=password'
+      - 'MONGO_INITDB_ROOT_USERNAME=admin'
+    ports:
+      - '27017:27017'

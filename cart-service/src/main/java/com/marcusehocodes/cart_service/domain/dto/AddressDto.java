@@ -1,8 +1,7 @@
-package com.marcuswhocodes.user_service.domain.dto;
+package com.marcusehocodes.cart_service.domain.dto;
 
-import com.marcuswhocodes.user_service.domain.enums.AddressType;
+import com.marcusehocodes.cart_service.domain.enums.AddressType;
 import lombok.*;
-
 
 
 @Getter
