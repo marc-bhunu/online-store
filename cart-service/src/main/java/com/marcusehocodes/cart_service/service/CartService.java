@@ -1,11 +1,12 @@
 package com.marcusehocodes.cart_service.service;
 
-import com.marcusehocodes.cart_service.domain.dto.CartDto;
+import com.marcusehocodes.cart_service.domain.dto.CartResponseDto;
+import com.marcusehocodes.cart_service.domain.dto.CreateCartRequestDto;
 
 import java.util.UUID;
 
 public interface CartService {
-    CartDto createCart(CartDto cartDto);
-
-    CartDto getCartByUserId(UUID userId);
+    CartResponseDto createCart(CreateCartRequestDto cartDto);
+    CartResponseDto getCartByUserId(UUID userId);
+    void deleteCartByUserId(UUID userId);
 }

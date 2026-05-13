@@ -10,4 +10,6 @@ import java.util.UUID;
 @Repository
 public interface CartRepository extends MongoRepository<Cart, UUID> {
     List<Cart> findCartByUserId(UUID userId);
+
+    boolean existsCartByUserId(UUID userId);
 }

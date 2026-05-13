@@ -1,6 +1,7 @@
 package com.marcusehocodes.cart_service.controller;
 
-import com.marcusehocodes.cart_service.domain.dto.CartDto;
+import com.marcusehocodes.cart_service.domain.dto.CartResponseDto;
+import com.marcusehocodes.cart_service.domain.dto.CreateCartRequestDto;
 import com.marcusehocodes.cart_service.service.CartService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -18,14 +19,20 @@ public class CartController {
 
 
     @PostMapping
-    private ResponseEntity<CartDto> createCart(@RequestBody CartDto cartDto) {
-        CartDto response = cartService.createCart(cartDto);
+    private ResponseEntity<CartResponseDto> createCart(@RequestBody CreateCartRequestDto cartDto) {
+        CartResponseDto response = cartService.createCart(cartDto);
         return new ResponseEntity<>(response, HttpStatus.CREATED);
     }
 
     @GetMapping("/{userId}")
-    private ResponseEntity<CartDto> getCartByUserId(@PathVariable UUID userId) {
-        CartDto response = cartService.getCartByUserId(userId);
+    private ResponseEntity<CartResponseDto> getCartByUserId(@PathVariable UUID userId) {
+        CartResponseDto response = cartService.getCartByUserId(userId);
         return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
+    @DeleteMapping("/{userId}")
+    private ResponseEntity<Void> deleteCartByUserId(@PathVariable UUID userId) {
+        cartService.deleteCartByUserId(userId);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }

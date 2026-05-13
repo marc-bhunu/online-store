@@ -2,7 +2,6 @@ package com.marcusehocodes.cart_service.domain.dto;
 
 import lombok.*;
 
-import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
@@ -11,7 +10,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class CartDto {
+public class CartResponseDto {
     private UUID userId;
     private List<LineItemDto> lineItems;
     private Long totalPrice;
