@@ -7,6 +7,8 @@ import com.marcusehocodes.cart_service.domain.dto.CartResponseDto;
 import com.marcusehocodes.cart_service.domain.dto.CreateCartRequestDto;
 import com.marcusehocodes.cart_service.domain.dto.LineItemDto;
 import com.marcusehocodes.cart_service.domain.dto.UserDto;
+import com.marcusehocodes.cart_service.exceptions.CartNotFoundException;
+import com.marcusehocodes.cart_service.exceptions.UserNotFoundException;
 import com.marcusehocodes.cart_service.repository.CartRepository;
 import com.marcusehocodes.cart_service.service.CartService;
 import lombok.RequiredArgsConstructor;
@@ -27,7 +29,7 @@ public class CartServiceImpl implements CartService {
     public CartResponseDto createCart(CreateCartRequestDto cartDto) {
         UserDto user = userClient.getUserById(cartDto.getUserId());
         if (user == null) {
-            throw new IllegalArgumentException("User with id " + cartDto.getUserId() + " does not exist");
+            throw new UserNotFoundException("User with id " + cartDto.getUserId() + " does not exist");
         }
 
         if (cartRepository.existsCartByUserId(cartDto.getUserId())) {
@@ -68,7 +70,7 @@ public class CartServiceImpl implements CartService {
     public CartResponseDto getCartByUserId(UUID userId) {
         List<Cart> carts = cartRepository.findCartByUserId(userId);
         if (carts.isEmpty()) {
-            throw new IllegalArgumentException("Cart for user with id " + userId + " does not exist");
+            throw new CartNotFoundException("Cart for user with id " + userId + " was not found");
         }
         return mapToDto(carts.get(0));
     }
@@ -77,7 +79,7 @@ public class CartServiceImpl implements CartService {
     public void deleteCartByUserId(UUID userId) {
         List<Cart> carts = cartRepository.findCartByUserId(userId);
         if (carts.isEmpty()) {
-            throw new IllegalArgumentException("Cart for user with id " + userId + " does not exist");
+            throw new CartNotFoundException("Cart for user with id " + userId + " was not found");
         }
         cartRepository.delete(carts.get(0));
     }

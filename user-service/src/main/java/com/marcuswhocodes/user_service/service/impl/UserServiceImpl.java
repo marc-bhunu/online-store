@@ -4,6 +4,7 @@ import com.marcuswhocodes.user_service.domain.dto.AddressDto;
 import com.marcuswhocodes.user_service.domain.dto.UserDto;
 import com.marcuswhocodes.user_service.domain.entity.Address;
 import com.marcuswhocodes.user_service.domain.entity.User;
+import com.marcuswhocodes.user_service.exceptions.UserNotFoundException;
 import com.marcuswhocodes.user_service.repository.UserRepository;
 import com.marcuswhocodes.user_service.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -51,20 +52,20 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDto getUserById(UUID id) {
-        User user = userRepository.findById(id).orElseThrow(() -> new RuntimeException("User not found with id: " + id));
+        User user = userRepository.findById(id).orElseThrow(() -> new UserNotFoundException("User not found with id: " + id));
         return mapToDto(user);
     }
 
     @Override
     public void deleteUserById(UUID id) {
-        User user = userRepository.findById(id).orElseThrow(() -> new RuntimeException("User not found with id: " + id));
+        User user = userRepository.findById(id).orElseThrow(() -> new UserNotFoundException("User not found with id: " + id));
         userRepository.delete(user);
     }
 
     @Override
     public UserDto updateUser(UserDto userDto) {
     User user = userRepository.findUserByEmail(userDto.getEmail())
-            .orElseThrow(() -> new RuntimeException("User not found with email: " + userDto.getEmail()));
+            .orElseThrow(() -> new UserNotFoundException("User not found with email: " + userDto.getEmail()));
         user.setUsername(userDto.getUsername());
         user.setFirstName(userDto.getFirstName());
         user.setLastName(userDto.getLastName());
