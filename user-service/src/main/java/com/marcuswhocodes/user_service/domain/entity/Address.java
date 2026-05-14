@@ -30,7 +30,7 @@ public class Address {
     private String state;
     private String zip;
     private String country;
-    private boolean isDefault;
+    private Boolean isDefault;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
