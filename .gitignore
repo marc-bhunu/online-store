@@ -1,3 +1,4 @@
 ./.idea/.idea/workspace.xml
 rm -rf .idea/
 mvn clean install
+data
