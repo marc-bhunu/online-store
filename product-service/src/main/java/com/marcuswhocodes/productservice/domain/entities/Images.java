@@ -14,7 +14,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @Builder
 @Table(name = "product_images")
-public class ProductImages {
+public class Images {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
@@ -41,7 +41,7 @@ public class ProductImages {
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-        ProductImages that = (ProductImages) o;
+        Images that = (Images) o;
         return isPrimary == that.isPrimary && Objects.equals(id, that.id) && Objects.equals(product, that.product) && Objects.equals(url, that.url) && Objects.equals(sortOrder, that.sortOrder) && Objects.equals(createdAt, that.createdAt) && Objects.equals(updatedAt, that.updatedAt);
     }
 

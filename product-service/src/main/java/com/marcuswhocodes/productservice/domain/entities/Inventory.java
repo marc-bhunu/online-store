@@ -13,8 +13,9 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class ProductInventory {
+public class Inventory {
     @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
     @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "product_id")
@@ -40,7 +41,7 @@ public class ProductInventory {
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-        ProductInventory that = (ProductInventory) o;
+        Inventory that = (Inventory) o;
         return quantity == that.quantity && quantityReserved == that.quantityReserved && quantityAvailable == that.quantityAvailable && Objects.equals(id, that.id) && Objects.equals(product, that.product) && Objects.equals(createdAt, that.createdAt) && Objects.equals(updatedAt, that.updatedAt);
     }
 

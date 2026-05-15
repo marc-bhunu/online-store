@@ -1,4 +1,113 @@
 package com.marcuswhocodes.productservice.service.impl;
 
-public class ProductServiceImpl {
+import com.marcuswhocodes.productservice.domain.dtos.CategoryDto;
+import com.marcuswhocodes.productservice.domain.dtos.ImageDto;
+import com.marcuswhocodes.productservice.domain.dtos.InventoryDto;
+import com.marcuswhocodes.productservice.domain.dtos.ProductDto;
+import com.marcuswhocodes.productservice.domain.entities.Category;
+import com.marcuswhocodes.productservice.domain.entities.Images;
+import com.marcuswhocodes.productservice.domain.entities.Inventory;
+import com.marcuswhocodes.productservice.domain.entities.Product;
+import com.marcuswhocodes.productservice.domain.enums.ProductStatus;
+import com.marcuswhocodes.productservice.repository.ProductRepository;
+import com.marcuswhocodes.productservice.service.ProductService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.UUID;
+
+
+@Service
+@RequiredArgsConstructor
+public class ProductServiceImpl implements ProductService {
+    private final ProductRepository productRepository;
+    @Override
+    public ProductDto createProduct(ProductDto productDto) {
+        Product product = Product.builder()
+                .name(productDto.getName())
+                .description(productDto.getDescription())
+                .price(productDto.getPrice())
+                .currency(productDto.getCurrency())
+                .status(ProductStatus.ACTIVE)
+                .build();
+
+        List<Images> images = productDto.getImages().stream()
+                .map(imageDto -> Images.builder()
+                        .url(imageDto.getUrl())
+                        .product(product)
+                        .isPrimary(imageDto.isPrimary())
+                        .sortOrder(imageDto.getSortOrder())
+                        .build())
+                .toList();
+
+        Inventory inventory = Inventory.builder()
+                .product(product)
+                .quantity(productDto.getInventory().getQuantity())
+                .quantityReserved(productDto.getInventory().getQuantityReserved())
+                .quantityAvailable(productDto.getInventory().getQuantityAvailable())
+                .build();
+
+        Category category = mapCategoryDtoToEntity(productDto.getCategory());
+
+        product.setImages(images);
+        product.setCategory(category);
+        product.setInventory(inventory);
+        return mapToDto(productRepository.save(product));
+    }
+
+    @Override
+    public ProductDto getProductById(UUID productId) {
+        Product product = productRepository
+                .findById(productId)
+                .orElseThrow(() -> new RuntimeException("Product not found"));
+        return mapToDto(product);
+    }
+
+    @Override
+    public void deleteProductById(UUID productId) {
+        Product product = productRepository
+                .findById(productId)
+                .orElseThrow(() -> new RuntimeException("Product not found"));
+        productRepository.delete(product);
+    }
+
+    private ProductDto mapToDto(Product save) {
+        return ProductDto.builder()
+                .name(save.getName())
+                .description(save.getDescription())
+                .price(save.getPrice())
+                .currency(save.getCurrency())
+                .status(save.getStatus())
+                .images(save.getImages().stream()
+                        .map(image ->  ImageDto.builder()
+                                .url(image.getUrl())
+                                .isPrimary(image.isPrimary())
+                                .sortOrder(image.getSortOrder())
+                                .build())
+                        .toList())
+                .inventory(InventoryDto.builder()
+                        .quantity(save.getInventory().getQuantity())
+                        .quantityReserved(save.getInventory().getQuantityReserved())
+                        .quantityAvailable(save.getInventory().getQuantityAvailable())
+                        .build())
+                .category(CategoryDto.builder()
+                        .name(save.getCategory().getName())
+                        .build())
+                .build();
+    }
+
+    private Category mapCategoryDtoToEntity(CategoryDto categoryDto) {
+        if (categoryDto == null) {
+            return null;
+        }
+
+        Category category = Category.builder()
+                .name(categoryDto.getName())
+                .build();
+        if (categoryDto.getParent() != null) {
+            category.setParent(mapCategoryDtoToEntity(categoryDto.getParent()));
+        }
+        return category;
+    }
 }

@@ -37,7 +37,7 @@ CREATE TABLE products
     description VARCHAR(255),
     price       DOUBLE PRECISION NOT NULL,
     currency    VARCHAR(255),
-    status      SMALLINT,
+    status      VARCHAR(255),
     created_at  TIMESTAMP WITHOUT TIME ZONE,
     updated_at  TIMESTAMP WITHOUT TIME ZONE,
     category_id BIGINT,
