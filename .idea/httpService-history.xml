@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="HttpHistory">
+    <option name="httpHistories">
+      <map>
+        <entry key="0">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;name&quot;: &quot;Cellphone&quot;,&#10;  &quot;description&quot;: &quot;A dual sim Samsung&quot;,&#10;  &quot;price&quot;: 1450,&#10;  &quot;currency&quot;: &quot;USD&quot;,&#10;  &quot;images&quot;: [&#10;    {&#10;      &quot;url&quot;: &quot;htps://google.co&quot;,&#10;      &quot;isPrimary&quot;: false,&#10;      &quot;sortOrder&quot;: &quot;1&quot;&#10;    }&#10;  ],&#10;  &quot;inventory&quot;: {&#10;    &quot;quantity&quot;: 450,&#10;    &quot;quantityReserved&quot;: 10,&#10;    &quot;quantityAvailable&quot;: 440&#10;  },&#10;  &quot;status&quot;: &quot;ACTIVE&quot;,&#10;  &quot;category&quot;: {&#10;    &quot;name&quot;: &quot;Cellphone&quot;,&#10;    &quot;parent&quot;: {&#10;      &quot;name&quot;: &quot;Electronics&quot;,&#10;      &quot;parent&quot;: {&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8082/api/v1/product" />
+              <option name="id" value="0" />
+              <option name="method" value="POST" />
+              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Fri May 15 12:11:36 SAST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
+              <option name="time" value="2026-05-15 12:11:36" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="1">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;name&quot;: &quot;Cellphone&quot;,&#10;  &quot;description&quot;: &quot;A dual sim Samsung&quot;,&#10;  &quot;price&quot;: 1450,&#10;  &quot;currency&quot;: &quot;USD&quot;,&#10;  &quot;images&quot;: [&#10;    {&#10;      &quot;url&quot;: &quot;htps://google.co&quot;,&#10;      &quot;isPrimary&quot;: false,&#10;      &quot;sortOrder&quot;: &quot;1&quot;&#10;    }&#10;  ],&#10;  &quot;inventory&quot;: {&#10;    &quot;quantity&quot;: 450,&#10;    &quot;quantityReserved&quot;: 10,&#10;    &quot;quantityAvailable&quot;: 440&#10;  },&#10;  &quot;status&quot;: &quot;ACTIVE&quot;,&#10;  &quot;category&quot;: {&#10;    &quot;name&quot;: &quot;Cellphone&quot;,&#10;    &quot;parent&quot;: {&#10;      &quot;name&quot;: &quot;Electronics&quot;,&#10;      &quot;parent&quot;: {&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8082/api/v1/product" />
+              <option name="id" value="1" />
+              <option name="method" value="POST" />
+              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Fri May 15 12:28:29 SAST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
+              <option name="time" value="2026-05-15 12:28:29" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="2">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;name&quot;: &quot;Cellphone&quot;,&#10;  &quot;description&quot;: &quot;A dual sim Samsung&quot;,&#10;  &quot;price&quot;: 1450,&#10;  &quot;currency&quot;: &quot;USD&quot;,&#10;  &quot;images&quot;: [&#10;    {&#10;      &quot;url&quot;: &quot;htps://google.co&quot;,&#10;      &quot;isPrimary&quot;: false,&#10;      &quot;sortOrder&quot;: &quot;1&quot;&#10;    }&#10;  ],&#10;  &quot;inventory&quot;: {&#10;    &quot;quantity&quot;: 450,&#10;    &quot;quantityReserved&quot;: 10,&#10;    &quot;quantityAvailable&quot;: 440&#10;  },&#10;  &quot;status&quot;: &quot;ACTIVE&quot;,&#10;  &quot;category&quot;: {&#10;    &quot;name&quot;: &quot;Cellphone&quot;,&#10;    &quot;parent&quot;: {&#10;      &quot;name&quot;: &quot;Electronics&quot;,&#10;      &quot;parent&quot;: {&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8082/api/v1/product" />
+              <option name="id" value="2" />
+              <option name="method" value="POST" />
+              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Fri May 15 12:29:41 SAST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
+              <option name="time" value="2026-05-15 12:29:41" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="3">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;name&quot;: &quot;Cellphone&quot;,&#10;  &quot;description&quot;: &quot;A dual sim Samsung&quot;,&#10;  &quot;price&quot;: 1450,&#10;  &quot;currency&quot;: &quot;USD&quot;,&#10;  &quot;images&quot;: [&#10;    {&#10;      &quot;url&quot;: &quot;htps://google.co&quot;,&#10;      &quot;isPrimary&quot;: false,&#10;      &quot;sortOrder&quot;: &quot;1&quot;&#10;    }&#10;  ],&#10;  &quot;inventory&quot;: {&#10;    &quot;quantity&quot;: 450,&#10;    &quot;quantityReserved&quot;: 10,&#10;    &quot;quantityAvailable&quot;: 440&#10;  },&#10;  &quot;status&quot;: &quot;ACTIVE&quot;,&#10;  &quot;category&quot;: {&#10;    &quot;name&quot;: &quot;Cellphone&quot;,&#10;    &quot;parent&quot;: {&#10;      &quot;name&quot;: &quot;Electronics&quot;,&#10;      &quot;parent&quot;: {&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8082/api/v1/product" />
+              <option name="id" value="3" />
+              <option name="method" value="POST" />
+              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Fri May 15 12:33:13 SAST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
+              <option name="time" value="2026-05-15 12:33:13" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="4">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;name&quot;: &quot;Cellphone&quot;,&#10;  &quot;description&quot;: &quot;A dual sim Samsung&quot;,&#10;  &quot;price&quot;: 1450,&#10;  &quot;currency&quot;: &quot;USD&quot;,&#10;  &quot;images&quot;: [&#10;    {&#10;      &quot;url&quot;: &quot;htps://google.co&quot;,&#10;      &quot;isPrimary&quot;: false,&#10;      &quot;sortOrder&quot;: &quot;1&quot;&#10;    }&#10;  ],&#10;  &quot;inventory&quot;: {&#10;    &quot;quantity&quot;: 450,&#10;    &quot;quantityReserved&quot;: 10,&#10;    &quot;quantityAvailable&quot;: 440&#10;  },&#10;  &quot;status&quot;: &quot;ACTIVE&quot;,&#10;  &quot;category&quot;: {&#10;    &quot;name&quot;: &quot;Cellphone&quot;,&#10;    &quot;parent&quot;: {&#10;      &quot;name&quot;: &quot;Electronics&quot;,&#10;      &quot;parent&quot;: {&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8082/api/v1/product" />
+              <option name="id" value="4" />
+              <option name="method" value="POST" />
+              <option name="res" value="{&quot;name&quot;:&quot;Cellphone&quot;,&quot;description&quot;:&quot;A dual sim Samsung&quot;,&quot;price&quot;:1450.0,&quot;currency&quot;:&quot;USD&quot;,&quot;images&quot;:[{&quot;url&quot;:&quot;htps://google.co&quot;,&quot;sortOrder&quot;:&quot;1&quot;,&quot;primary&quot;:false}],&quot;inventory&quot;:{&quot;quantity&quot;:450,&quot;quantityReserved&quot;:10,&quot;quantityAvailable&quot;:440},&quot;status&quot;:&quot;ACTIVE&quot;,&quot;category&quot;:{&quot;name&quot;:&quot;Cellphone&quot;,&quot;parent&quot;:null}}" />
+              <option name="time" value="2026-05-15 12:37:49" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="5">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="host" value="http://127.0.0.1:8082/api/v1/product/80f918a8-16a8-4a33-8a16-b362eaad95fc" />
+              <option name="id" value="5" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map>
+                  <entry key="leastSigBits" value="0" />
+                  <entry key="mostSigBits" value="0" />
+                </map>
+              </option>
+              <option name="res" value="{&quot;name&quot;:&quot;Cellphone&quot;,&quot;description&quot;:&quot;A dual sim Samsung&quot;,&quot;price&quot;:1450.0,&quot;currency&quot;:&quot;USD&quot;,&quot;images&quot;:[{&quot;url&quot;:&quot;htps://google.co&quot;,&quot;sortOrder&quot;:&quot;1&quot;,&quot;primary&quot;:false}],&quot;inventory&quot;:{&quot;quantity&quot;:450,&quot;quantityReserved&quot;:10,&quot;quantityAvailable&quot;:440},&quot;status&quot;:&quot;ACTIVE&quot;,&quot;category&quot;:{&quot;name&quot;:&quot;Cellphone&quot;,&quot;parent&quot;:null}}" />
+              <option name="time" value="2026-05-15 12:45:38" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="6">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="host" value="http://127.0.0.1:8082/api/v1/product/80f918a8-16a8-4a33-8a16-b362eaad95fc" />
+              <option name="id" value="6" />
+              <option name="method" value="DELETE" />
+              <option name="params">
+                <map>
+                  <entry key="leastSigBits" value="0" />
+                  <entry key="mostSigBits" value="0" />
+                </map>
+              </option>
+              <option name="res" value="" />
+              <option name="time" value="2026-05-15 12:49:27" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="7">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;name&quot;: &quot;iPhone 16&quot;,&#10;  &quot;description&quot;: &quot;a description&quot;,&#10;  &quot;price&quot;: 142,&#10;  &quot;currency&quot;: &quot;USD&quot;,&#10;  &quot;images&quot;: [&#10;    {&#10;      &quot;url&quot;: &quot;https://www.google.co&quot;,&#10;      &quot;isPrimary&quot;: false,&#10;      &quot;sortOrder&quot;: &quot;1&quot;&#10;    }&#10;  ],&#10;  &quot;inventory&quot;: {&#10;    &quot;quantity&quot;: 100,&#10;    &quot;quantityReserved&quot;: 5,&#10;    &quot;quantityAvailable&quot;: 95&#10;  },&#10;  &quot;status&quot;: &quot;ACTIVE&quot;,&#10;  &quot;category&quot;: {&#10;    &quot;name&quot;: &quot;Electronics&quot;,&#10;    &quot;parent&quot;: {&#10;      &quot;name&quot;: &quot;Cellphone&quot;,&#10;      &quot;parent&quot;: {&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8082/api/v1/product" />
+              <option name="id" value="7" />
+              <option name="method" value="POST" />
+              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Fri May 15 13:11:35 SAST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
+              <option name="time" value="2026-05-15 13:11:35" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="8">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;name&quot;: &quot;iPhone 16&quot;,&#10;  &quot;description&quot;: &quot;a description&quot;,&#10;  &quot;price&quot;: 142,&#10;  &quot;currency&quot;: &quot;USD&quot;,&#10;  &quot;images&quot;: [&#10;    {&#10;      &quot;url&quot;: &quot;https://www.google.co&quot;,&#10;      &quot;isPrimary&quot;: false,&#10;      &quot;sortOrder&quot;: &quot;1&quot;&#10;    }&#10;  ],&#10;  &quot;inventory&quot;: {&#10;    &quot;quantity&quot;: 100,&#10;    &quot;quantityReserved&quot;: 5,&#10;    &quot;quantityAvailable&quot;: 95&#10;  },&#10;  &quot;status&quot;: &quot;ACTIVE&quot;,&#10;  &quot;category&quot;: {&#10;    &quot;name&quot;: &quot;Electronics&quot;,&#10;    &quot;parent&quot;: {&#10;      &quot;name&quot;: &quot;Cellphone&quot;,&#10;      &quot;parent&quot;: {&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8082/api/v1/product" />
+              <option name="id" value="8" />
+              <option name="method" value="POST" />
+              <option name="res" value="{&quot;name&quot;:&quot;iPhone 16&quot;,&quot;description&quot;:&quot;a description&quot;,&quot;price&quot;:142.0,&quot;currency&quot;:&quot;USD&quot;,&quot;images&quot;:[{&quot;url&quot;:&quot;https://www.google.co&quot;,&quot;sortOrder&quot;:&quot;1&quot;,&quot;primary&quot;:false}],&quot;inventory&quot;:{&quot;quantity&quot;:100,&quot;quantityReserved&quot;:5,&quot;quantityAvailable&quot;:95},&quot;status&quot;:&quot;ACTIVE&quot;,&quot;category&quot;:{&quot;name&quot;:&quot;Electronics&quot;,&quot;parent&quot;:null}}" />
+              <option name="time" value="2026-05-15 13:14:48" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="9">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="host" value="http://127.0.0.1:8082/api/v1/product/60833556-99de-4547-9057-46fcd5b4a06a" />
+              <option name="id" value="9" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map>
+                  <entry key="leastSigBits" value="0" />
+                  <entry key="mostSigBits" value="0" />
+                </map>
+              </option>
+              <option name="res" value="{&quot;name&quot;:&quot;iPhone 16&quot;,&quot;description&quot;:&quot;a description&quot;,&quot;price&quot;:142.0,&quot;currency&quot;:&quot;USD&quot;,&quot;images&quot;:[{&quot;url&quot;:&quot;https://www.google.co&quot;,&quot;sortOrder&quot;:&quot;1&quot;,&quot;primary&quot;:false}],&quot;inventory&quot;:{&quot;quantity&quot;:100,&quot;quantityReserved&quot;:5,&quot;quantityAvailable&quot;:95},&quot;status&quot;:&quot;ACTIVE&quot;,&quot;category&quot;:{&quot;name&quot;:&quot;Electronics&quot;,&quot;parent&quot;:null}}" />
+              <option name="time" value="2026-05-15 13:15:39" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="10">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="host" value="http://127.0.0.1:8082/api/v1/product/60833556-99de-4547-9057-46fcd5b4a06a" />
+              <option name="id" value="10" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map>
+                  <entry key="leastSigBits" value="0" />
+                  <entry key="mostSigBits" value="0" />
+                </map>
+              </option>
+              <option name="res" value="{&quot;name&quot;:&quot;iPhone 16&quot;,&quot;description&quot;:&quot;a description&quot;,&quot;price&quot;:142.0,&quot;currency&quot;:&quot;USD&quot;,&quot;images&quot;:[{&quot;url&quot;:&quot;https://www.google.co&quot;,&quot;sortOrder&quot;:&quot;1&quot;,&quot;primary&quot;:false}],&quot;inventory&quot;:{&quot;quantity&quot;:100,&quot;quantityReserved&quot;:5,&quot;quantityAvailable&quot;:95},&quot;status&quot;:&quot;ACTIVE&quot;,&quot;category&quot;:{&quot;name&quot;:&quot;Electronics&quot;,&quot;parent&quot;:null}}" />
+              <option name="time" value="2026-05-15 13:17:10" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="11">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="multipart/form-data" />
+              <option name="fileNames">
+                <array>
+                  <option value="$USER_HOME$/OneDrive/Pictures/New folder/2025-12-01 14_48_13-Greenshot.png" />
+                </array>
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="multipart/form-data" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8082/upload" />
+              <option name="id" value="11" />
+              <option name="method" value="POST" />
+              <option name="res" value="Uploaded as 62ea0c17-25d5-44df-879d-d2db664aa298_2025-12-01 14_48_13-Greenshot.png" />
+              <option name="time" value="2026-05-15 15:33:27" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="12">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8082/api/v1/product" />
+              <option name="id" value="12" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon May 18 14:03:49 SAST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Method Not Allowed, status=405).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
+              <option name="time" value="2026-05-18 14:03:50" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="13">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8082/api/v1/products/all" />
+              <option name="id" value="13" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="[{&quot;name&quot;:&quot;iPhone&quot;,&quot;description&quot;:&quot;Description&quot;,&quot;price&quot;:1250.0,&quot;currency&quot;:&quot;USD&quot;,&quot;images&quot;:[{&quot;url&quot;:&quot;http://products.localhost:9000/546704e3-d3ca-4ac2-b4cd-7a48ac3db854.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20260515T181730Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Credential=minioadmin%2F20260515%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=11e590b03359e9c4413f24a3192d4ae26f9a93ee4dcfec2b3e0ea40e68304d9a&quot;,&quot;sortOrder&quot;:&quot;0&quot;,&quot;primary&quot;:false},{&quot;url&quot;:&quot;http://products.localhost:9000/eda80589-aff1-4f0a-a127-cea19ff9265c.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20260515T181730Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Credential=minioadmin%2F20260515%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=5475210388768c4b266c28967bf0b2a7bf494e1b2b0814fddace4142124e80a3&quot;,&quot;sortOrder&quot;:&quot;0&quot;,&quot;primary&quot;:false}],&quot;inventory&quot;:{&quot;quantity&quot;:100,&quot;quantityReserved&quot;:110,&quot;quantityAvailable&quot;:110},&quot;status&quot;:&quot;ACTIVE&quot;,&quot;category&quot;:{&quot;name&quot;:&quot;Electronics&quot;,&quot;parent&quot;:null}},{&quot;name&quot;:&quot;iPhone&quot;,&quot;description&quot;:&quot;Description&quot;,&quot;price&quot;:1250.0,&quot;currency&quot;:&quot;USD&quot;,&quot;images&quot;:[{&quot;url&quot;:&quot;http://products.localhost:9000/23b693c1-3592-4206-831a-09d16d61c035.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20260515T181925Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Credential=minioadmin%2F20260515%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=9a49ba9d841ab7b1b9147d611a04f800bb488a45e0dfa1eb2af10969e699b259&quot;,&quot;sortOrder&quot;:&quot;0&quot;,&quot;primary&quot;:false},{&quot;url&quot;:&quot;http://products.localhost:9000/00ced287-2c37-4144-a490-428c54e1bb33.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20260515T181926Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Credential=minioadmin%2F20260515%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=81394f3dcf4cd57ecfd9dcd73edd57809cb4dd2a9ebdbd86980e223028c2e553&quot;,&quot;sortOrder&quot;:&quot;0&quot;,&quot;primary&quot;:false},{&quot;url&quot;:&quot;http://products.localhost:9000/63ed00a4-5ee2-4c4a-a806-671e71ebf3eb.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20260515T181926Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Credential=minioadmin%2F20260515%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=e342811939a6fdb3821e703fbcd3de70a3433f8cf1bfd0b685dc615e60dae9cf&quot;,&quot;sortOrder&quot;:&quot;0&quot;,&quot;primary&quot;:false}],&quot;inventory&quot;:{&quot;quantity&quot;:100,&quot;quantityReserved&quot;:110,&quot;quantityAvailable&quot;:110},&quot;status&quot;:&quot;ACTIVE&quot;,&quot;category&quot;:{&quot;name&quot;:&quot;Electronics&quot;,&quot;parent&quot;:null}},{&quot;name&quot;:&quot;iPhone&quot;,&quot;description&quot;:&quot;Description&quot;,&quot;price&quot;:1250.0,&quot;currency&quot;:&quot;USD&quot;,&quot;images&quot;:[{&quot;url&quot;:&quot;http://products.localhost:9000/20e739b2-24cc-45d8-b4a5-b712e2934555.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20260518T114636Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Credential=minioadmin%2F20260518%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=cd6272f020f079fb29321b7f7c6195ef4bad6cdc966d7270319a12c4e51d4eed&quot;,&quot;sortOrder&quot;:&quot;0&quot;,&quot;primary&quot;:false},{&quot;url&quot;:&quot;http://products.localhost:9000/0df02c7f-ba85-4785-80d7-63b172a5e188.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20260518T114636Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Credential=minioadmin%2F20260518%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=9e26d5933a16fa4937e129a625be510c2da71ed9ca41a39117fff3efede3812e&quot;,&quot;sortOrder&quot;:&quot;0&quot;,&quot;primary&quot;:false},{&quot;url&quot;:&quot;http://products.localhost:9000/bb692434-94e2-4783-bffe-18c193cd0c43.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20260518T114637Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Credential=minioadmin%2F20260518%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=967f0251bd4f4aa432caa6917623deb9f7f501c9d6edbcfb261fa0cbf4991d62&quot;,&quot;sortOrder&quot;:&quot;0&quot;,&quot;primary&quot;:false}],&quot;inventory&quot;:{&quot;quantity&quot;:100,&quot;quantityReserved&quot;:110,&quot;quantityAvailable&quot;:110},&quot;status&quot;:&quot;ACTIVE&quot;,&quot;category&quot;:{&quot;name&quot;:&quot;Electronics&quot;,&quot;parent&quot;:null}}]" />
+              <option name="time" value="2026-05-18 14:06:46" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
