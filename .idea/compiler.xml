@@ -3,7 +3,7 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
-      <profile name="Annotation profile for product-service" enabled="true">
+      <profile name="Annotation profile for order-ingestion-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -12,6 +12,7 @@
         </processorPath>
         <module name="product-service" />
         <module name="cart-service" />
+        <module name="order-ingestion-service" />
         <module name="user-service" />
       </profile>
     </annotationProcessing>
@@ -23,6 +24,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="cart-service" options="-parameters" />
       <module name="marcuswhocodes" options="-parameters" />
+      <module name="order-ingestion-service" options="-parameters" />
       <module name="product-service" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>
