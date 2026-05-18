@@ -21,6 +21,7 @@ public class Images {
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "product_id")
     private Product product;
+    @Column(columnDefinition = "TEXT")
     private String url;
     private boolean isPrimary;
     private String sortOrder;

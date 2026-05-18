@@ -22,7 +22,7 @@ CREATE TABLE product_images
 (
     id         UUID    NOT NULL,
     product_id UUID,
-    url        VARCHAR(255),
+    url        TEXT NOT NULL,
     is_primary BOOLEAN NOT NULL,
     sort_order VARCHAR(255),
     created_at TIMESTAMP WITHOUT TIME ZONE,

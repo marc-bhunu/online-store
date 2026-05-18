@@ -11,9 +11,12 @@ import com.marcuswhocodes.productservice.domain.entities.Product;
 import com.marcuswhocodes.productservice.domain.enums.ProductStatus;
 import com.marcuswhocodes.productservice.repository.ProductRepository;
 import com.marcuswhocodes.productservice.service.ProductService;
+import com.marcuswhocodes.productservice.service.S3Service;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.UUID;
 
@@ -22,8 +25,9 @@ import java.util.UUID;
 @RequiredArgsConstructor
 public class ProductServiceImpl implements ProductService {
     private final ProductRepository productRepository;
+    private final S3Service s3Service;
     @Override
-    public ProductDto createProduct(ProductDto productDto) {
+    public ProductDto createProduct(ProductDto productDto, List<MultipartFile> images) {
         Product product = Product.builder()
                 .name(productDto.getName())
                 .description(productDto.getDescription())
@@ -32,13 +36,22 @@ public class ProductServiceImpl implements ProductService {
                 .status(ProductStatus.ACTIVE)
                 .build();
 
-        List<Images> images = productDto.getImages().stream()
-                .map(imageDto -> Images.builder()
-                        .url(imageDto.getUrl())
-                        .product(product)
-                        .isPrimary(imageDto.isPrimary())
-                        .sortOrder(imageDto.getSortOrder())
-                        .build())
+        List<Images> imageList = images.stream()
+                .map((file) -> {
+                    int i = 0;
+                    String imageUrl = null;
+                    try {
+                        imageUrl = s3Service.uploadFile(file);
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
+                    return Images.builder()
+                            .url(imageUrl)
+                            .product(product)
+                            .isPrimary(false)
+                            .sortOrder(String.valueOf(i++))
+                            .build();
+                })
                 .toList();
 
         Inventory inventory = Inventory.builder()
@@ -50,7 +63,7 @@ public class ProductServiceImpl implements ProductService {
 
         Category category = mapCategoryDtoToEntity(productDto.getCategory());
 
-        product.setImages(images);
+        product.setImages(imageList);
         product.setCategory(category);
         product.setInventory(inventory);
         return mapToDto(productRepository.save(product));
