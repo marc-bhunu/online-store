@@ -10,6 +10,7 @@ import software.amazon.awssdk.auth.credentials.StaticCredentialsProvider;
 import software.amazon.awssdk.core.sync.RequestBody;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3.S3Client;
+import software.amazon.awssdk.services.s3.S3Configuration;
 import software.amazon.awssdk.services.s3.model.PutObjectRequest;
 import software.amazon.awssdk.services.s3.presigner.S3Presigner;
 import software.amazon.awssdk.services.s3.presigner.model.GetObjectPresignRequest;
@@ -52,7 +53,7 @@ public class S3ServiceImpl implements S3Service {
 
             s3Client.putObject(putObjectRequest, RequestBody.fromBytes(fileBytes));
 
-            return getPresignedUrl(fileName);
+            return fileName;
         } catch (IOException e) {
             throw new RuntimeException("Failed to upload file to S3/MinIO", e);
         }
@@ -66,7 +67,12 @@ public class S3ServiceImpl implements S3Service {
                 .credentialsProvider(StaticCredentialsProvider.create(
                         AwsBasicCredentials.create(accessKey, secretKey)
                 ))
+                .serviceConfiguration(S3Configuration.builder()
+                        .pathStyleAccessEnabled(true)
+                        .build())
                 .build()) {
+
+
 
             GetObjectPresignRequest presignRequest = GetObjectPresignRequest.builder()
                     .signatureDuration(Duration.ofDays(7))

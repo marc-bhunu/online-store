@@ -12,11 +12,17 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/api/v1/product")
+@RequestMapping("/api/v1/products")
 @RequiredArgsConstructor
 public class ProductController {
     private final ProductService productService;
 
+
+    @GetMapping("/all")
+    private ResponseEntity<List<ProductDto>> getAllProducts(){
+        List<ProductDto> products = productService.getAllProducts();
+        return new ResponseEntity<>(products, HttpStatus.OK);
+    }
 
     @PostMapping
     private ResponseEntity<ProductDto> createProduct(

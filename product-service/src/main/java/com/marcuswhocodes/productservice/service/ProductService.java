@@ -10,4 +10,5 @@ public interface ProductService {
     ProductDto createProduct(ProductDto productDto, List<MultipartFile> images);
     ProductDto getProductById(UUID productId);
     void deleteProductById(UUID productId);
+    List<ProductDto> getAllProducts();
 }

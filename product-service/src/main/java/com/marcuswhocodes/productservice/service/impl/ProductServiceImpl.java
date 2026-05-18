@@ -39,14 +39,14 @@ public class ProductServiceImpl implements ProductService {
         List<Images> imageList = images.stream()
                 .map((file) -> {
                     int i = 0;
-                    String imageUrl = null;
+                    String imageKeyname = null;
                     try {
-                        imageUrl = s3Service.uploadFile(file);
+                        imageKeyname = s3Service.uploadFile(file);
                     } catch (IOException e) {
                         throw new RuntimeException(e);
                     }
                     return Images.builder()
-                            .url(imageUrl)
+                            .url(imageKeyname)
                             .product(product)
                             .isPrimary(false)
                             .sortOrder(String.valueOf(i++))
@@ -85,6 +85,12 @@ public class ProductServiceImpl implements ProductService {
         productRepository.delete(product);
     }
 
+    @Override
+    public List<ProductDto> getAllProducts() {
+        List<Product> products = productRepository.findAll();
+        return products.stream().map(this::mapToDto).toList();
+    }
+
     private ProductDto mapToDto(Product save) {
         return ProductDto.builder()
                 .name(save.getName())
@@ -94,7 +100,7 @@ public class ProductServiceImpl implements ProductService {
                 .status(save.getStatus())
                 .images(save.getImages().stream()
                         .map(image ->  ImageDto.builder()
-                                .url(image.getUrl())
+                                .url(s3Service.getPresignedUrl(image.getUrl()))
                                 .isPrimary(image.isPrimary())
                                 .sortOrder(image.getSortOrder())
                                 .build())
