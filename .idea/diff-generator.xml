@@ -2,6 +2,6 @@
 <project version="4">
   <component name="DiffGenerationConfig">
     <option name="snapshotDb" value="false" />
-    <option name="snapshotModelValue" value="product-service:product-service" />
+    <option name="snapshotModelValue" value="orders-service:orders-service" />
   </component>
 </project>

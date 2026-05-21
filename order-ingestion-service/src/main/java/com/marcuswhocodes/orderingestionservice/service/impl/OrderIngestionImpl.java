@@ -1,5 +1,6 @@
 package com.marcuswhocodes.orderingestionservice.service.impl;
 
+import com.marcuswhocodes.kafka.event.OrderEvent;
 import com.marcuswhocodes.orderingestionservice.dto.OrderIngestionDto;
 import com.marcuswhocodes.orderingestionservice.service.OrderIngestionService;
 import lombok.RequiredArgsConstructor;
@@ -11,11 +12,11 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 @Slf4j
 public class OrderIngestionImpl implements OrderIngestionService {
-    private final KafkaTemplate<String, OrderIngestionDto> kafkaTemplate;
+    private final KafkaTemplate<String, OrderEvent> kafkaTemplate;
 
     @Override
     public void ingestOrder(OrderIngestionDto orderIngestionDto) {
-        OrderIngestionDto event = OrderIngestionDto.builder()
+        OrderEvent event = OrderEvent.builder()
                 .userId(orderIngestionDto.userId())
                 .cartId(orderIngestionDto.cartId())
                 .timestamp(orderIngestionDto.timestamp())
