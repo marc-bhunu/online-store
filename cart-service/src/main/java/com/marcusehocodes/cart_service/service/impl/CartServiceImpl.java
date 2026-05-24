@@ -84,6 +84,12 @@ public class CartServiceImpl implements CartService {
         cartRepository.delete(carts.get(0));
     }
 
+    @Override
+    public List<CartResponseDto> getAllCarts() {
+        List<Cart> response = cartRepository.findAll();
+        return response.stream().map(this::mapToDto).collect(Collectors.toList());
+    }
+
     private CartResponseDto mapToDto(Cart response) {
         List<LineItemDto> lineItems = response
                 .getLineItems()

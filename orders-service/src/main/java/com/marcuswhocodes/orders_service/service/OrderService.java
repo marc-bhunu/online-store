@@ -4,8 +4,10 @@ import com.marcuswhocodes.kafka.event.OrderEvent;
 import com.marcuswhocodes.orders_service.clients.CartClient;
 import com.marcuswhocodes.orders_service.clients.UserClient;
 import com.marcuswhocodes.orders_service.domain.dtos.cart.CartResponseDto;
+import com.marcuswhocodes.orders_service.domain.dtos.order.OrderAddressDto;
+import com.marcuswhocodes.orders_service.domain.dtos.order.OrderDto;
+import com.marcuswhocodes.orders_service.domain.dtos.order.OrderItemDto;
 import com.marcuswhocodes.orders_service.domain.dtos.user.UserDto;
-import com.marcuswhocodes.orders_service.domain.entity.AddressSnapshot;
 import com.marcuswhocodes.orders_service.domain.entity.Order;
 import com.marcuswhocodes.orders_service.domain.entity.OrderAddress;
 import com.marcuswhocodes.orders_service.domain.entity.OrderItem;
@@ -20,6 +22,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @Slf4j
@@ -35,8 +38,8 @@ public class OrderService {
         CartResponseDto cartResponse = cartClient.getCartByUserId(orderEvent.userId());
         UserDto userResponse = userClient.getUserById(orderEvent.userId());
         log.info("Creating Order: {}", orderEvent);
-        log.info("Cart Response: {}", cartResponse);
-        log.info("User Response: {}", userResponse);
+        log.info("Cart Response: {}", cartResponse.toString());
+        log.info("User Response: {}", userResponse.toString());
 
         if (userResponse == null || cartResponse == null) {
             log.warn("Failed to create order for user: {}", userResponse != null ? userResponse.getEmail() : "Unknown");
@@ -63,17 +66,14 @@ public class OrderService {
                 .map(addressDto -> OrderAddress.builder()
                         .type(AddressType.BILLING)
                         .order(order)
-                        .addressSnapshot(AddressSnapshot.builder()
-                                .type(AddressType.BILLING)
-                                .line1(addressDto.getLine1())
-                                .line2(addressDto.getLine2())
-                                .city(addressDto.getCity())
-                                .state(addressDto.getState())
-                                .zip(addressDto.getZip())
-                                .country(addressDto.getCountry())
-                                .city(addressDto.getCity())
-                                .build())
-                        .build()).findFirst().orElse(null);
+                        .line1(addressDto.getLine1())
+                        .line2(addressDto.getLine2())
+                        .city(addressDto.getCity())
+                        .state(addressDto.getState())
+                        .zip(addressDto.getZip())
+                        .country(addressDto.getCountry()).build())
+                .findFirst().orElse(null);
+        log.info(" The order address is as follows: {}", orderAddress);
 
         List<OrderItem> orderItems = cart
                 .getLineItems()
@@ -90,5 +90,39 @@ public class OrderService {
         order.setOrderItems(orderItems);
         order.setOrderAddress(orderAddress);
         orderRepository.save(order);
+    }
+
+    public List<OrderDto> getAllOrders() {
+        List<Order> orders = orderRepository.findAll();
+        return mapToDto(orders);
+    }
+
+    private List<OrderDto> mapToDto(List<Order> orders) {
+        return orders
+                .stream()
+                .map(order -> OrderDto.builder()
+                        .userId(order.getUserId())
+                        .status(order.getStatus())
+                        .orderItems(order.getOrderItems()
+                                .stream()
+                                .map(item -> OrderItemDto.builder()
+                                        .productId(item.getProductId())
+                                        .productName(item.getProductName())
+                                        .price(item.getPrice())
+                                        .quantity(item.getQuantity())
+                                        .subtotal(item.getSubtotal())
+                                        .build()).collect(Collectors.toList()))
+                        .orderAddress(OrderAddressDto.builder()
+                                .type(order.getOrderAddress().getType())
+                                .line1(order.getOrderAddress().getLine1())
+                                .line2(order.getOrderAddress().getLine2())
+                                .city(order.getOrderAddress().getCity())
+                                .state(order.getOrderAddress().getState())
+                                .zip(order.getOrderAddress().getZip())
+                                .country(order.getOrderAddress().getCountry())
+                                .build())
+                        .totalAmount(order.getTotalAmount())
+                        .currency(order.getCurrency())
+                        .build()).collect(Collectors.toList());
     }
 }
