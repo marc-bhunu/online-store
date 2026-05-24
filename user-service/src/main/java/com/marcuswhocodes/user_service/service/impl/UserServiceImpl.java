@@ -93,8 +93,15 @@ public class UserServiceImpl implements UserService {
         return mapToDto(updatedUser);
     }
 
+    @Override
+    public List<UserDto> getAllUsers() {
+        List<User> users = userRepository.findAll();
+        return users.stream().map(this::mapToDto).toList();
+    }
+
     private UserDto mapToDto(User savedUser) {
         return UserDto.builder()
+                .id(savedUser.getId())
                 .email(savedUser.getEmail())
                 .username(savedUser.getUsername())
                 .firstName(savedUser.getFirstName())
