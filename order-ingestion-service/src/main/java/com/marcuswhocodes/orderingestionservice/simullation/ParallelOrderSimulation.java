@@ -57,7 +57,7 @@ public class ParallelOrderSimulation implements CommandLineRunner {
                 for (int j = 0; j < requestForThread; j++) {
                     OrderIngestionDto dto = OrderIngestionDto.builder()
                             .userId(UUID.fromString("c245e42d-c992-408a-9740-949597e78005"))
-                            .cartId(UUID.fromString("c245e42d-c992-408a-9740-949597e78005"))
+                            .eventId(UUID.fromString("c245e42d-c992-408a-9740-949597e78005"))
                             .timestamp(LocalDateTime.now().atZone(ZoneId.systemDefault()).toInstant())
                             .build();
                     try{

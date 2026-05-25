@@ -8,7 +8,7 @@ import java.util.UUID;
 
 @Builder
 public record OrderIngestionDto(UUID userId,
-                                UUID cartId,
+                                UUID eventId,
                                 @JsonFormat(shape = JsonFormat.Shape.STRING)
                                 Instant timestamp) {
 }
