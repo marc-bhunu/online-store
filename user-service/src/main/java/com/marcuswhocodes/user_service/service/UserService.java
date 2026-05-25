@@ -2,6 +2,7 @@ package com.marcuswhocodes.user_service.service;
 
 import com.marcuswhocodes.user_service.domain.dto.UserDto;
 
+import java.util.List;
 import java.util.UUID;
 
 public interface UserService {
@@ -9,4 +10,6 @@ public interface UserService {
     UserDto getUserById(UUID id);
     void deleteUserById(UUID id);
     UserDto updateUser(UserDto userDto);
+
+    List<UserDto> getAllUsers();
 }

@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.UUID;
 
 @RestController
@@ -22,6 +23,12 @@ public class CartController {
     private ResponseEntity<CartResponseDto> createCart(@RequestBody CreateCartRequestDto cartDto) {
         CartResponseDto response = cartService.createCart(cartDto);
         return new ResponseEntity<>(response, HttpStatus.CREATED);
+    }
+
+    @GetMapping
+    private ResponseEntity<List<CartResponseDto>> getAllCarts(){
+        List<CartResponseDto> response = cartService.getAllCarts();
+        return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
     @GetMapping("/{userId}")

@@ -1,10 +1,9 @@
-package com.marcuswhocodes.user_service.domain.dto;
+package com.marcuswhocodes.orders_service.domain.dtos.user;
 
-import com.marcuswhocodes.user_service.domain.enums.UserStatus;
+import com.marcuswhocodes.orders_service.domain.enums.UserStatus;
 import lombok.*;
 
 import java.util.List;
-import java.util.UUID;
 
 @Getter
 @Setter
@@ -12,7 +11,6 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserDto {
-    private UUID id;
     private String email;
     private String username;
     private String firstName;

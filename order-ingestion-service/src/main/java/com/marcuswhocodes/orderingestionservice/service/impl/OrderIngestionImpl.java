@@ -18,7 +18,7 @@ public class OrderIngestionImpl implements OrderIngestionService {
     public void ingestOrder(OrderIngestionDto orderIngestionDto) {
         OrderEvent event = OrderEvent.builder()
                 .userId(orderIngestionDto.userId())
-                .cartId(orderIngestionDto.cartId())
+                .eventId(orderIngestionDto.eventId())
                 .timestamp(orderIngestionDto.timestamp())
                 .build();
         kafkaTemplate.send("orders", event);

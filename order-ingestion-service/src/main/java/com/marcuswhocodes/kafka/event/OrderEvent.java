@@ -8,8 +8,9 @@ import java.time.Instant;
 import java.util.UUID;
 
 @Builder
-public record OrderEvent(UUID userId,
-                         UUID cartId,
+public record OrderEvent(
+                         UUID userId,
+                         UUID eventId,
                          @JsonFormat(shape = JsonFormat.Shape.STRING)
                          Instant timestamp
 ) {

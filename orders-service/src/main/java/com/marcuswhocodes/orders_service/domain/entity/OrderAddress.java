@@ -17,16 +17,23 @@ import java.util.UUID;
 @NoArgsConstructor
 @Table(name = "order_addresses")
 @Entity
+@ToString
 public class OrderAddress {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
+    @Enumerated(value = EnumType.STRING)
     private AddressType type;
     @OneToOne
     @JoinColumn(name = "order_id")
     private Order order;
-    @JdbcTypeCode(SqlTypes.JSON)
-    @Column(columnDefinition = "jsonb")
-    private AddressSnapshot addressSnapshot;
+
+    private String line1;
+    private String line2;
+    private String city;
+    private String state;
+    private String zip;
+    private String country;
 
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
@@ -41,5 +48,4 @@ public class OrderAddress {
     private void onUpdate() {
         this.updatedAt = LocalDateTime.now();
     }
-
 }

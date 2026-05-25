@@ -1,5 +1,5 @@
 package com.marcuswhocodes.orders_service.domain.enums;
 
-public enum AddressType {
-    BILLING, SHIPPING,HOME
+public enum UserStatus {
+    ACTIVE, INACTIVE
 }

@@ -1,17 +1,22 @@
 CREATE TABLE order_addresses
 (
-    id               UUID NOT NULL,
-    type             SMALLINT,
-    order_id         UUID,
-    address_snapshot JSONB,
-    created_at       TIMESTAMP WITHOUT TIME ZONE,
-    updated_at       TIMESTAMP WITHOUT TIME ZONE,
+    id         UUID NOT NULL,
+    type       VARCHAR(255),
+    order_id   UUID,
+    line1      VARCHAR(255),
+    line2      VARCHAR(255),
+    city       VARCHAR(255),
+    state      VARCHAR(255),
+    zip        VARCHAR(255),
+    country    VARCHAR(255),
+    created_at TIMESTAMP WITHOUT TIME ZONE,
+    updated_at TIMESTAMP WITHOUT TIME ZONE,
     CONSTRAINT pk_order_addresses PRIMARY KEY (id)
 );
 
 CREATE TABLE order_items
 (
-    id           UUID,
+    id           UUID NOT NULL,
     order_id     UUID,
     product_id   UUID,
     product_name VARCHAR(255),
@@ -19,7 +24,8 @@ CREATE TABLE order_items
     quantity     INTEGER,
     subtotal     BIGINT,
     created_at   TIMESTAMP WITHOUT TIME ZONE,
-    updated_at   TIMESTAMP WITHOUT TIME ZONE
+    updated_at   TIMESTAMP WITHOUT TIME ZONE,
+    CONSTRAINT pk_order_items PRIMARY KEY (id)
 );
 
 CREATE TABLE orders
