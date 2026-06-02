@@ -2,3 +2,5 @@
 rm -rf .idea/
 mvn clean install
 data
+
+.env
