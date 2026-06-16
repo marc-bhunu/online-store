@@ -27,6 +27,15 @@ services:
       POSTGRES_DB: orders_db
     ports:
       - "5434:5432"
+  payments-postgres:
+    image: postgres:latest
+    container_name: payments_db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: payments_db
+    ports:
+      - "5435:5432"
   mongodb:
     image: mongo:latest
     container_name: cart_db
