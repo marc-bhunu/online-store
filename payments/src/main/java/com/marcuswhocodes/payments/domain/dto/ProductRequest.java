@@ -1,4 +1,4 @@
-package com.marcuswhocodes.payments.domain;
+package com.marcuswhocodes.payments.domain.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

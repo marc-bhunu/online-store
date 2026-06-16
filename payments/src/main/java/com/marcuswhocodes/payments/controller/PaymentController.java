@@ -1,7 +1,7 @@
 package com.marcuswhocodes.payments.controller;
 
-import com.marcuswhocodes.payments.domain.ProductRequest;
-import com.marcuswhocodes.payments.domain.StripeResponse;
+import com.marcuswhocodes.payments.domain.dto.ProductRequest;
+import com.marcuswhocodes.payments.domain.dto.StripeResponse;
 import com.marcuswhocodes.payments.service.StripeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

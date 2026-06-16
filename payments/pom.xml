@@ -5,14 +5,14 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.0.6</version>
+        <version>4.0.7</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.marcuswhocodes</groupId>
-    <artifactId>payments-service</artifactId>
+    <artifactId>payments</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name/>
-    <description/>
+    <name>payments</name>
+    <description>payments</description>
     <url/>
     <licenses>
         <license/>

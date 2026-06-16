@@ -1,7 +1,7 @@
 package com.marcuswhocodes.payments.service;
 
-import com.marcuswhocodes.payments.domain.ProductRequest;
-import com.marcuswhocodes.payments.domain.StripeResponse;
+import com.marcuswhocodes.payments.domain.dto.ProductRequest;
+import com.marcuswhocodes.payments.domain.dto.StripeResponse;
 import com.stripe.Stripe;
 import com.stripe.exception.StripeException;
 import com.stripe.model.*;
