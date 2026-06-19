@@ -19,9 +19,6 @@
               <option name="host" value="http://127.0.0.1:8085/api/v1/product/checkout" />
               <option name="id" value="0" />
               <option name="method" value="POST" />
-              <option name="params">
-                <map />
-              </option>
               <option name="res" value="{&quot;status&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Payment Session Created&quot;,&quot;sessionId&quot;:&quot;cs_test_b1Iw6iWUhnPRv5fMOLBx9rffYoxOMqVelr6JFTyZpumMNJY4gRUjBNyorq&quot;,&quot;sessionUrl&quot;:&quot;https://checkout.stripe.com/c/pay/cs_test_b1Iw6iWUhnPRv5fMOLBx9rffYoxOMqVelr6JFTyZpumMNJY4gRUjBNyorq#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbkZmfU9XYT1RamNubGZvfGhrUTNCd0Y1RDNBR3BVT2JkaDJoX3RLdVxHS08xVFxoTWZcYEpDTExHSE10QWN8MXRzM3NHN0NTNkhKQ39tQn02bVU1akg1NWI0b2x2UkByJyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl&quot;}" />
               <option name="time" value="2026-06-19 17:17:26" />
               <option name="uri" value="" />
@@ -44,9 +41,6 @@
               <option name="host" value="http://127.0.0.1:8085/api/v1/product/checkout" />
               <option name="id" value="1" />
               <option name="method" value="POST" />
-              <option name="params">
-                <map />
-              </option>
               <option name="res" value="{&quot;status&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Payment Session Created&quot;,&quot;sessionId&quot;:&quot;cs_test_b1en40sOtAdIno3ZxKRv9avwiOPoxoFeuiDQCEHNA6VLRw3uYBOPhZPnm6&quot;,&quot;sessionUrl&quot;:&quot;https://checkout.stripe.com/c/pay/cs_test_b1en40sOtAdIno3ZxKRv9avwiOPoxoFeuiDQCEHNA6VLRw3uYBOPhZPnm6#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbkZmfU9XYT1RamNubGZvfGhrUTNCd0Y1RDNBR3BVT2JkaDJoX3RLdVxHS08xVFxoTWZcYEpDTExHSE10QWN8MXRzM3NHN0NTNkhKQ39tQn02bVU1akg1NWI0b2x2UkByJyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl&quot;}" />
               <option name="time" value="2026-06-19 17:45:04" />
               <option name="uri" value="" />
@@ -69,9 +63,6 @@
               <option name="host" value="http://127.0.0.1:8085/api/v1/product/checkout" />
               <option name="id" value="2" />
               <option name="method" value="POST" />
-              <option name="params">
-                <map />
-              </option>
               <option name="res" value="{&quot;status&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Payment Session Created&quot;,&quot;sessionId&quot;:&quot;cs_test_b15nSHUrFS8WzQERVu8J0xFXv246kTnWfdpZPx54yKmJ6j3DzSgoWEzBn0&quot;,&quot;sessionUrl&quot;:&quot;https://checkout.stripe.com/c/pay/cs_test_b15nSHUrFS8WzQERVu8J0xFXv246kTnWfdpZPx54yKmJ6j3DzSgoWEzBn0#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbkZmfU9XYT1RamNubGZvfGhrUTNCd0Y1RDNBR3BVT2JkaDJoX3RLdVxHS08xVFxoTWZcYEpDTExHSE10QWN8MXRzM3NHN0NTNkhKQ39tQn02bVU1akg1NWI0b2x2UkByJyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl&quot;}" />
               <option name="time" value="2026-06-19 17:56:17" />
               <option name="uri" value="" />
@@ -94,9 +85,6 @@
               <option name="host" value="http://127.0.0.1:8085/api/v1/product/checkout" />
               <option name="id" value="3" />
               <option name="method" value="POST" />
-              <option name="params">
-                <map />
-              </option>
               <option name="res" value="{&quot;status&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Payment Session Created&quot;,&quot;sessionId&quot;:&quot;cs_test_b1B6q5fGpjFUw3c2xnBTJMQ81o2t2N1OAvGrPltENvlLCeByJe5JOIuUMO&quot;,&quot;sessionUrl&quot;:&quot;https://checkout.stripe.com/c/pay/cs_test_b1B6q5fGpjFUw3c2xnBTJMQ81o2t2N1OAvGrPltENvlLCeByJe5JOIuUMO#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbkZmfU9XYT1RamNubGZvfGhrUTNCd0Y1RDNBR3BVT2JkaDJoX3RLdVxHS08xVFxoTWZcYEpDTExHSE10QWN8MXRzM3NHN0NTNkhKQ39tQn02bVU1akg1NWI0b2x2UkByJyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl&quot;}" />
               <option name="time" value="2026-06-19 17:58:14" />
               <option name="uri" value="" />
@@ -119,9 +107,6 @@
               <option name="host" value="http://127.0.0.1:8085/api/v1/product/checkout" />
               <option name="id" value="4" />
               <option name="method" value="POST" />
-              <option name="params">
-                <map />
-              </option>
               <option name="res" value="{&quot;status&quot;:&quot;error&quot;,&quot;message&quot;:&quot;Duplicate payment request&quot;,&quot;sessionId&quot;:null,&quot;sessionUrl&quot;:null}" />
               <option name="time" value="2026-06-19 17:58:21" />
               <option name="uri" value="" />
@@ -131,53 +116,7 @@
         <entry key="5">
           <value>
             <ReqHistory>
-              <option name="body" value="" />
-              <option name="contentType" value="application/x-www-form-urlencoded" />
-              <option name="fileNames">
-                <array />
-              </option>
-              <option name="host" value="http://127.0.0.1:8082/api/v1/product/80f918a8-16a8-4a33-8a16-b362eaad95fc" />
-              <option name="id" value="5" />
-              <option name="method" value="GET" />
-              <option name="params">
-                <map>
-                  <entry key="leastSigBits" value="0" />
-                  <entry key="mostSigBits" value="0" />
-                </map>
-              </option>
-              <option name="res" value="{&quot;name&quot;:&quot;Cellphone&quot;,&quot;description&quot;:&quot;A dual sim Samsung&quot;,&quot;price&quot;:1450.0,&quot;currency&quot;:&quot;USD&quot;,&quot;images&quot;:[{&quot;url&quot;:&quot;htps://google.co&quot;,&quot;sortOrder&quot;:&quot;1&quot;,&quot;primary&quot;:false}],&quot;inventory&quot;:{&quot;quantity&quot;:450,&quot;quantityReserved&quot;:10,&quot;quantityAvailable&quot;:440},&quot;status&quot;:&quot;ACTIVE&quot;,&quot;category&quot;:{&quot;name&quot;:&quot;Cellphone&quot;,&quot;parent&quot;:null}}" />
-              <option name="time" value="2026-05-15 12:45:38" />
-              <option name="uri" value="" />
-            </ReqHistory>
-          </value>
-        </entry>
-        <entry key="6">
-          <value>
-            <ReqHistory>
-              <option name="body" value="" />
-              <option name="contentType" value="application/x-www-form-urlencoded" />
-              <option name="fileNames">
-                <array />
-              </option>
-              <option name="host" value="http://127.0.0.1:8082/api/v1/product/80f918a8-16a8-4a33-8a16-b362eaad95fc" />
-              <option name="id" value="6" />
-              <option name="method" value="DELETE" />
-              <option name="params">
-                <map>
-                  <entry key="leastSigBits" value="0" />
-                  <entry key="mostSigBits" value="0" />
-                </map>
-              </option>
-              <option name="res" value="" />
-              <option name="time" value="2026-05-15 12:49:27" />
-              <option name="uri" value="" />
-            </ReqHistory>
-          </value>
-        </entry>
-        <entry key="7">
-          <value>
-            <ReqHistory>
-              <option name="body" value="{&#10;  &quot;name&quot;: &quot;iPhone 16&quot;,&#10;  &quot;description&quot;: &quot;a description&quot;,&#10;  &quot;price&quot;: 142,&#10;  &quot;currency&quot;: &quot;USD&quot;,&#10;  &quot;images&quot;: [&#10;    {&#10;      &quot;url&quot;: &quot;https://www.google.co&quot;,&#10;      &quot;isPrimary&quot;: false,&#10;      &quot;sortOrder&quot;: &quot;1&quot;&#10;    }&#10;  ],&#10;  &quot;inventory&quot;: {&#10;    &quot;quantity&quot;: 100,&#10;    &quot;quantityReserved&quot;: 5,&#10;    &quot;quantityAvailable&quot;: 95&#10;  },&#10;  &quot;status&quot;: &quot;ACTIVE&quot;,&#10;  &quot;category&quot;: {&#10;    &quot;name&quot;: &quot;Electronics&quot;,&#10;    &quot;parent&quot;: {&#10;      &quot;name&quot;: &quot;Cellphone&quot;,&#10;      &quot;parent&quot;: {&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="body" value="{&#10;  &quot;orderId&quot;: &quot;8abd65dd-73d4-4026-b9af-1f725a226d88&quot;,&#10;  &quot;userId&quot;: &quot;8abd65dd-73d4-4026-b9af-1f725a226d88&quot;,&#10;  &quot;idempotencyKey&quot;: &quot;8abd65dd-73d4-4026-b9af-1f725a226d888abd65dd-73d4-4026-b9af-1f725a226d88&quot;,&#10;  &quot;sessionId&quot;: &quot;session1&quot;,&#10;  &quot;totalAmount&quot;: 0,&#10;  &quot;currency&quot;: &quot;GBP&quot;,&#10;  &quot;paymentItems&quot;: [&#10;    {&#10;      &quot;amount&quot;: 1,&#10;      &quot;quantity&quot;: 2,&#10;      &quot;name&quot;: &quot;Product1&quot;,&#10;      &quot;currency&quot;: &quot;GBP&quot;&#10;    },&#10;    {&#10;      &quot;amount&quot;: 1,&#10;      &quot;quantity&quot;: 2,&#10;      &quot;name&quot;: &quot;Product2&quot;,&#10;      &quot;currency&quot;: &quot;GBP&quot;&#10;    }&#10;  ],&#10;  &quot;status&quot;: &quot;INITIATED&quot;,&#10;  &quot;paymentMethod&quot;: &quot;CARD&quot;&#10;}" />
               <option name="contentType" value="application/json" />
               <option name="fileNames">
                 <array />
@@ -187,11 +126,64 @@
                   <entry key="Content-Type" value="application/json" />
                 </map>
               </option>
-              <option name="host" value="http://127.0.0.1:8082/api/v1/product" />
+              <option name="host" value="http://127.0.0.1:8085/api/v1/product/checkout" />
+              <option name="id" value="5" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="{&quot;status&quot;:&quot;error&quot;,&quot;message&quot;:&quot;Duplicate payment request&quot;,&quot;sessionId&quot;:null,&quot;sessionUrl&quot;:null}" />
+              <option name="time" value="2026-06-19 18:34:22" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="6">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;orderId&quot;: &quot;8abd65dd-73d4-4026-b9af-1f725a226d88&quot;,&#10;  &quot;userId&quot;: &quot;8abd65dd-73d4-4026-b9af-1f725a226d88&quot;,&#10;  &quot;idempotencyKey&quot;: &quot;8abd65dd-73d4-4026-b9af-1f725a226d888abd65dd-73d4-4026-b9af-1f725a226d88&quot;,&#10;  &quot;sessionId&quot;: &quot;session1&quot;,&#10;  &quot;totalAmount&quot;: 0,&#10;  &quot;currency&quot;: &quot;GBP&quot;,&#10;  &quot;paymentItems&quot;: [&#10;    {&#10;      &quot;amount&quot;: 1,&#10;      &quot;quantity&quot;: 2,&#10;      &quot;name&quot;: &quot;Product1&quot;,&#10;      &quot;currency&quot;: &quot;GBP&quot;&#10;    },&#10;    {&#10;      &quot;amount&quot;: 1,&#10;      &quot;quantity&quot;: 2,&#10;      &quot;name&quot;: &quot;Product2&quot;,&#10;      &quot;currency&quot;: &quot;GBP&quot;&#10;    }&#10;  ],&#10;  &quot;status&quot;: &quot;INITIATED&quot;,&#10;  &quot;paymentMethod&quot;: &quot;CARD&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8085/api/v1/product/checkout" />
+              <option name="id" value="6" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="{&quot;status&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Payment Session Created&quot;,&quot;sessionId&quot;:&quot;cs_test_b1iEQ2mKYFbj17liczg7766T3Ij4PhB00KNjMKn6nOCtQErUtwfAX4OJnu&quot;,&quot;sessionUrl&quot;:&quot;https://checkout.stripe.com/c/pay/cs_test_b1iEQ2mKYFbj17liczg7766T3Ij4PhB00KNjMKn6nOCtQErUtwfAX4OJnu#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbkZmfU9XYT1RamNubGZvfGhrUTNCd0Y1RDNBR3BVT2JkaDJoX3RLdVxHS08xVFxoTWZcYEpDTExHSE10QWN8MXRzM3NHN0NTNkhKQ39tQn02bVU1akg1NWI0b2x2UkByJyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl&quot;}" />
+              <option name="time" value="2026-06-19 18:35:12" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="7">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;orderId&quot;: &quot;8abd65dd-73d4-4026-b9af-1f725a226d88&quot;,&#10;  &quot;userId&quot;: &quot;8abd65dd-73d4-4026-b9af-1f725a226d88&quot;,&#10;  &quot;idempotencyKey&quot;: &quot;8abd65dd-73d4-4026-b9af-1f725a226d888abd65dd-73d4-4026-b9af-1f725a226d88&quot;,&#10;  &quot;sessionId&quot;: &quot;session1&quot;,&#10;  &quot;totalAmount&quot;: 0,&#10;  &quot;currency&quot;: &quot;GBP&quot;,&#10;  &quot;paymentItems&quot;: [&#10;    {&#10;      &quot;amount&quot;: 1,&#10;      &quot;quantity&quot;: 2,&#10;      &quot;name&quot;: &quot;Product1&quot;,&#10;      &quot;currency&quot;: &quot;GBP&quot;&#10;    },&#10;    {&#10;      &quot;amount&quot;: 1,&#10;      &quot;quantity&quot;: 2,&#10;      &quot;name&quot;: &quot;Product2&quot;,&#10;      &quot;currency&quot;: &quot;GBP&quot;&#10;    }&#10;  ],&#10;  &quot;status&quot;: &quot;INITIATED&quot;,&#10;  &quot;paymentMethod&quot;: &quot;CARD&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8085/api/v1/product/checkout" />
               <option name="id" value="7" />
               <option name="method" value="POST" />
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Fri May 15 13:11:35 SAST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-05-15 13:11:35" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="{&quot;status&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Payment Session Created&quot;,&quot;sessionId&quot;:&quot;cs_test_b1CnRzosdmqOvtHt4I32b9m08W5gEhL96qpcZro8IXrJSIWGV2MJw0MWZA&quot;,&quot;sessionUrl&quot;:&quot;https://checkout.stripe.com/c/pay/cs_test_b1CnRzosdmqOvtHt4I32b9m08W5gEhL96qpcZro8IXrJSIWGV2MJw0MWZA#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbkZmfU9XYT1RamNubGZvfGhrUTNCd0Y1RDNBR3BVT2JkaDJoX3RLdVxHS08xVFxoTWZcYEpDTExHSE10QWN8MXRzM3NHN0NTNkhKQ39tQn02bVU1akg1NWI0b2x2UkByJyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl&quot;}" />
+              <option name="time" value="2026-06-19 18:41:17" />
               <option name="uri" value="" />
             </ReqHistory>
           </value>
@@ -924,9 +916,6 @@
               <option name="host" value="http://127.0.0.1:8080/api/v1/user" />
               <option name="id" value="42" />
               <option name="method" value="POST" />
-              <option name="params">
-                <map />
-              </option>
               <option name="res" value="{&quot;id&quot;:&quot;8abd65dd-73d4-4026-b9af-1f725a226d88&quot;,&quot;email&quot;:&quot;user@email.com&quot;,&quot;username&quot;:&quot;USER&quot;,&quot;firstName&quot;:&quot;USER&quot;,&quot;lastName&quot;:&quot;USER&quot;,&quot;phone&quot;:&quot;786673384&quot;,&quot;addresses&quot;:[{&quot;type&quot;:&quot;HOME&quot;,&quot;line1&quot;:&quot;LINE1&quot;,&quot;line2&quot;:&quot;LINE2&quot;,&quot;city&quot;:&quot;CITY&quot;,&quot;state&quot;:&quot;STATE&quot;,&quot;zip&quot;:&quot;ZIP&quot;,&quot;country&quot;:&quot;COUNTRY&quot;,&quot;isDefault&quot;:false}],&quot;status&quot;:&quot;ACTIVE&quot;}" />
               <option name="time" value="2026-06-19 15:48:25" />
               <option name="uri" value="" />
@@ -949,9 +938,6 @@
               <option name="host" value="http://127.0.0.1:8085/api/v1/product/checkout" />
               <option name="id" value="43" />
               <option name="method" value="POST" />
-              <option name="params">
-                <map />
-              </option>
               <option name="res" value="{&quot;status&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Payment Session Created&quot;,&quot;sessionId&quot;:&quot;cs_test_a1bOGGEPk8JmV6UxHW67rLVqkzxGPZIVncx1Zo13ny54uYkJkWU3ug0hO7&quot;,&quot;sessionUrl&quot;:&quot;https://checkout.stripe.com/c/pay/cs_test_a1bOGGEPk8JmV6UxHW67rLVqkzxGPZIVncx1Zo13ny54uYkJkWU3ug0hO7#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbkZmfU9XYT1RamNubGZvfGhrUTNCd0Y1RDNBR3BVT2JkaDJoX3RLdVxHS08xVFxoTWZcYEpDTExHSE10QWN8MXRzM3NHN0NTNkhKQ39tQn02bVU1akg1NWI0b2x2UkByJyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl&quot;}" />
               <option name="time" value="2026-06-19 15:53:14" />
               <option name="uri" value="" />
@@ -974,9 +960,6 @@
               <option name="host" value="http://127.0.0.1:8085/api/v1/product/checkout" />
               <option name="id" value="44" />
               <option name="method" value="POST" />
-              <option name="params">
-                <map />
-              </option>
               <option name="res" value="{&quot;status&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Payment Session Created&quot;,&quot;sessionId&quot;:&quot;cs_test_a1gccvLFlbO7nCm3hnVKUYY2qx6Suc0rs7AHevrobu4ZTz4cq8rx7LIbPD&quot;,&quot;sessionUrl&quot;:&quot;https://checkout.stripe.com/c/pay/cs_test_a1gccvLFlbO7nCm3hnVKUYY2qx6Suc0rs7AHevrobu4ZTz4cq8rx7LIbPD#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbkZmfU9XYT1RamNubGZvfGhrUTNCd0Y1RDNBR3BVT2JkaDJoX3RLdVxHS08xVFxoTWZcYEpDTExHSE10QWN8MXRzM3NHN0NTNkhKQ39tQn02bVU1akg1NWI0b2x2UkByJyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl&quot;}" />
               <option name="time" value="2026-06-19 16:07:52" />
               <option name="uri" value="" />
@@ -999,9 +982,6 @@
               <option name="host" value="http://127.0.0.1:8085/api/v1/product/checkout" />
               <option name="id" value="45" />
               <option name="method" value="POST" />
-              <option name="params">
-                <map />
-              </option>
               <option name="res" value="{&quot;status&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Payment Session Created&quot;,&quot;sessionId&quot;:&quot;cs_test_b1JhjFssV6yrfs6IEEWuvGPwR6Xil3gNttA7JVwd61HsFu7w0y2iAdFH9h&quot;,&quot;sessionUrl&quot;:&quot;https://checkout.stripe.com/c/pay/cs_test_b1JhjFssV6yrfs6IEEWuvGPwR6Xil3gNttA7JVwd61HsFu7w0y2iAdFH9h#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbkZmfU9XYT1RamNubGZvfGhrUTNCd0Y1RDNBR3BVT2JkaDJoX3RLdVxHS08xVFxoTWZcYEpDTExHSE10QWN8MXRzM3NHN0NTNkhKQ39tQn02bVU1akg1NWI0b2x2UkByJyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl&quot;}" />
               <option name="time" value="2026-06-19 16:08:58" />
               <option name="uri" value="" />
@@ -1024,9 +1004,6 @@
               <option name="host" value="http://127.0.0.1:8085/api/v1/product/checkout" />
               <option name="id" value="46" />
               <option name="method" value="POST" />
-              <option name="params">
-                <map />
-              </option>
               <option name="res" value="{&quot;status&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Payment Session Created&quot;,&quot;sessionId&quot;:&quot;cs_test_b1Yv1YiMckMnVQxN1t4mM09nWY6f2kHCN7Yg9RW4bB1oEQ16PwldKyaewU&quot;,&quot;sessionUrl&quot;:&quot;https://checkout.stripe.com/c/pay/cs_test_b1Yv1YiMckMnVQxN1t4mM09nWY6f2kHCN7Yg9RW4bB1oEQ16PwldKyaewU#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbkZmfU9XYT1RamNubGZvfGhrUTNCd0Y1RDNBR3BVT2JkaDJoX3RLdVxHS08xVFxoTWZcYEpDTExHSE10QWN8MXRzM3NHN0NTNkhKQ39tQn02bVU1akg1NWI0b2x2UkByJyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl&quot;}" />
               <option name="time" value="2026-06-19 16:29:08" />
               <option name="uri" value="" />
@@ -1049,9 +1026,6 @@
               <option name="host" value="http://127.0.0.1:8085/api/v1/product/checkout" />
               <option name="id" value="47" />
               <option name="method" value="POST" />
-              <option name="params">
-                <map />
-              </option>
               <option name="res" value="{&quot;status&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Payment Session Created&quot;,&quot;sessionId&quot;:&quot;cs_test_b1zHOhi8qlzdqS3Df8mmTQjD8utjdQCA2xtVd5STB2gfbv8bMJhb5OJDH5&quot;,&quot;sessionUrl&quot;:&quot;https://checkout.stripe.com/c/pay/cs_test_b1zHOhi8qlzdqS3Df8mmTQjD8utjdQCA2xtVd5STB2gfbv8bMJhb5OJDH5#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbkZmfU9XYT1RamNubGZvfGhrUTNCd0Y1RDNBR3BVT2JkaDJoX3RLdVxHS08xVFxoTWZcYEpDTExHSE10QWN8MXRzM3NHN0NTNkhKQ39tQn02bVU1akg1NWI0b2x2UkByJyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl&quot;}" />
               <option name="time" value="2026-06-19 16:52:27" />
               <option name="uri" value="" />
@@ -1074,9 +1048,6 @@
               <option name="host" value="http://127.0.0.1:8085/api/v1/product/checkout" />
               <option name="id" value="48" />
               <option name="method" value="POST" />
-              <option name="params">
-                <map />
-              </option>
               <option name="res" value="{&quot;status&quot;:&quot;error&quot;,&quot;message&quot;:&quot;Duplicate payment request&quot;,&quot;sessionId&quot;:null,&quot;sessionUrl&quot;:null}" />
               <option name="time" value="2026-06-19 17:12:32" />
               <option name="uri" value="" />
@@ -1099,9 +1070,6 @@
               <option name="host" value="http://127.0.0.1:8085/api/v1/product/checkout" />
               <option name="id" value="49" />
               <option name="method" value="POST" />
-              <option name="params">
-                <map />
-              </option>
               <option name="res" value="{&quot;status&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Payment Session Created&quot;,&quot;sessionId&quot;:&quot;cs_test_b1Gh6keqjBWwsR6E70ECqHDyPzu4BrJVAFiIXW3mQrVoFcbhL5LbpTtL7V&quot;,&quot;sessionUrl&quot;:&quot;https://checkout.stripe.com/c/pay/cs_test_b1Gh6keqjBWwsR6E70ECqHDyPzu4BrJVAFiIXW3mQrVoFcbhL5LbpTtL7V#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbkZmfU9XYT1RamNubGZvfGhrUTNCd0Y1RDNBR3BVT2JkaDJoX3RLdVxHS08xVFxoTWZcYEpDTExHSE10QWN8MXRzM3NHN0NTNkhKQ39tQn02bVU1akg1NWI0b2x2UkByJyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl&quot;}" />
               <option name="time" value="2026-06-19 17:14:54" />
               <option name="uri" value="" />
@@ -1112,8 +1080,8 @@
     </option>
     <option name="point">
       <AtomicInteger>
-        <option name="opaque" value="5" />
-        <option name="plain" value="5" />
+        <option name="opaque" value="8" />
+        <option name="plain" value="8" />
       </AtomicInteger>
     </option>
   </component>

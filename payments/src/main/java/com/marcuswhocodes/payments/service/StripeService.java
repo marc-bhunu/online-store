@@ -1,5 +1,6 @@
 package com.marcuswhocodes.payments.service;
 
+import com.marcuswhocodes.kafka.event.OrderEvent;
 import com.marcuswhocodes.payments.domain.dto.PaymentItems;
 import com.marcuswhocodes.payments.domain.dto.PaymentRequest;
 import com.marcuswhocodes.payments.domain.dto.StripeResponse;
@@ -20,6 +21,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,7 +33,7 @@ public class StripeService {
     @Value("${stripe.secret.key}")
     private String secretKey;
     private final PaymentRepository paymentRepository;
-    private final KafkaTemplate<String, String> kafkaTemplate;
+    private final KafkaTemplate<String, OrderEvent> kafkaTemplate;
     public StripeResponse checkoutProducts(PaymentRequest paymentRequest) {
         Stripe.apiKey = secretKey;
         StripeResponse response = null;
@@ -135,7 +137,11 @@ public class StripeService {
                 Payment payment = paymentRepository.findBySessionId(session.getId());
                 payment.setStatus(PaymentStatus.PAID);
                 paymentRepository.save(payment);
-                kafkaTemplate.send("payment-events", "Payment completed for session ID: " + session.getId());
+                OrderEvent orderEvent = OrderEvent.builder()
+                        .orderId(payment.getOrderId())
+                        .timestamp(Instant.now())
+                        .build();
+                kafkaTemplate.send("order-completed", orderEvent);
                 break;
             default:
                 System.out.println("Unhandled event type: " + event.getType());
