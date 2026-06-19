@@ -4,9 +4,7 @@ import com.marcuswhocodes.payments.domain.enums.PaymentMethod;
 import com.marcuswhocodes.payments.domain.enums.PaymentStatus;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -17,6 +15,8 @@ import java.util.UUID;
 @NoArgsConstructor
 @Table(name = "payments")
 @Entity
+@Getter
+@Setter
 @Builder
 public class Payment {
     @Id
@@ -29,7 +29,7 @@ public class Payment {
     private Long totalAmount;
     private String currency;
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "payment")
-    private List<PaymentItems> paymentItems = new ArrayList<>();
+    private List<PaymentItem> paymentItems = new ArrayList<>();
     @Enumerated(value = EnumType.STRING)
     private PaymentStatus status;
     @Enumerated(value = EnumType.STRING)

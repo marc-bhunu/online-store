@@ -1,13 +1,12 @@
 package com.marcuswhocodes.payments.domain.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ProductRequest {
+@Builder
+public class PaymentItems {
     private Long amount;
     private Long quantity;
     private String name;

@@ -14,7 +14,7 @@ import java.util.UUID;
 @Entity
 @Table(name = "payment_items")
 @Builder
-public class PaymentItems {
+public class PaymentItem {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;

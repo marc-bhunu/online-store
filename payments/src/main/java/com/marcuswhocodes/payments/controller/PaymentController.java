@@ -1,6 +1,6 @@
 package com.marcuswhocodes.payments.controller;
 
-import com.marcuswhocodes.payments.domain.dto.ProductRequest;
+import com.marcuswhocodes.payments.domain.dto.PaymentRequest;
 import com.marcuswhocodes.payments.domain.dto.StripeResponse;
 import com.marcuswhocodes.payments.service.StripeService;
 import lombok.RequiredArgsConstructor;
@@ -19,8 +19,8 @@ public class PaymentController {
     private final StripeService stripeService;
 
     @PostMapping("/checkout")
-    public ResponseEntity<StripeResponse> checkoutProducts(@RequestBody ProductRequest productRequest){
-        var response = stripeService.checkoutProducts(productRequest);
+    public ResponseEntity<StripeResponse> checkoutProducts(@RequestBody PaymentRequest paymentRequest){
+        var response = stripeService.checkoutProducts(paymentRequest);
         return new ResponseEntity<>(response,HttpStatus.CREATED);
     }
 
