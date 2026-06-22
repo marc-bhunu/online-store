@@ -1,6 +1,7 @@
 package com.marcuswhocodes.productservice.service;
 
 import com.marcuswhocodes.productservice.domain.dtos.ProductDto;
+import com.marcuswhocodes.productservice.domain.dtos.ReverseProductDto;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
@@ -11,4 +12,6 @@ public interface ProductService {
     ProductDto getProductById(UUID productId);
     void deleteProductById(UUID productId);
     List<ProductDto> getAllProducts();
+
+    void reserveProduct(List<ReverseProductDto> products);
 }

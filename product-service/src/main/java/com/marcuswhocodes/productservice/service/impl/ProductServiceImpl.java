@@ -1,9 +1,6 @@
 package com.marcuswhocodes.productservice.service.impl;
 
-import com.marcuswhocodes.productservice.domain.dtos.CategoryDto;
-import com.marcuswhocodes.productservice.domain.dtos.ImageDto;
-import com.marcuswhocodes.productservice.domain.dtos.InventoryDto;
-import com.marcuswhocodes.productservice.domain.dtos.ProductDto;
+import com.marcuswhocodes.productservice.domain.dtos.*;
 import com.marcuswhocodes.productservice.domain.entities.Category;
 import com.marcuswhocodes.productservice.domain.entities.Images;
 import com.marcuswhocodes.productservice.domain.entities.Inventory;
@@ -89,6 +86,27 @@ public class ProductServiceImpl implements ProductService {
     public List<ProductDto> getAllProducts() {
         List<Product> products = productRepository.findAll();
         return products.stream().map(this::mapToDto).toList();
+    }
+
+    @Override
+    public void reserveProduct(List<ReverseProductDto> products) {
+        for (ReverseProductDto productDto : products) {
+            Product product = productRepository
+                    .findById(productDto.getProductId())
+                    .orElseThrow(() -> new RuntimeException("Product not found"));
+
+            if (product.getInventory().getQuantityAvailable() < productDto.getQuantity()) {
+                throw new RuntimeException("Not enough inventory for product: " + product.getName());
+            }
+
+            product.getInventory().setQuantityReserved(
+                    product.getInventory().getQuantityReserved() + productDto.getQuantity()
+            );
+            product.getInventory().setQuantityAvailable(
+                    product.getInventory().getQuantityAvailable() - productDto.getQuantity()
+            );
+            productRepository.save(product);
+        }
     }
 
     private ProductDto mapToDto(Product save) {

@@ -129,9 +129,6 @@
               <option name="host" value="http://127.0.0.1:8085/api/v1/product/checkout" />
               <option name="id" value="5" />
               <option name="method" value="POST" />
-              <option name="params">
-                <map />
-              </option>
               <option name="res" value="{&quot;status&quot;:&quot;error&quot;,&quot;message&quot;:&quot;Duplicate payment request&quot;,&quot;sessionId&quot;:null,&quot;sessionUrl&quot;:null}" />
               <option name="time" value="2026-06-19 18:34:22" />
               <option name="uri" value="" />
@@ -154,9 +151,6 @@
               <option name="host" value="http://127.0.0.1:8085/api/v1/product/checkout" />
               <option name="id" value="6" />
               <option name="method" value="POST" />
-              <option name="params">
-                <map />
-              </option>
               <option name="res" value="{&quot;status&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Payment Session Created&quot;,&quot;sessionId&quot;:&quot;cs_test_b1iEQ2mKYFbj17liczg7766T3Ij4PhB00KNjMKn6nOCtQErUtwfAX4OJnu&quot;,&quot;sessionUrl&quot;:&quot;https://checkout.stripe.com/c/pay/cs_test_b1iEQ2mKYFbj17liczg7766T3Ij4PhB00KNjMKn6nOCtQErUtwfAX4OJnu#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbkZmfU9XYT1RamNubGZvfGhrUTNCd0Y1RDNBR3BVT2JkaDJoX3RLdVxHS08xVFxoTWZcYEpDTExHSE10QWN8MXRzM3NHN0NTNkhKQ39tQn02bVU1akg1NWI0b2x2UkByJyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl&quot;}" />
               <option name="time" value="2026-06-19 18:35:12" />
               <option name="uri" value="" />
@@ -179,9 +173,6 @@
               <option name="host" value="http://127.0.0.1:8085/api/v1/product/checkout" />
               <option name="id" value="7" />
               <option name="method" value="POST" />
-              <option name="params">
-                <map />
-              </option>
               <option name="res" value="{&quot;status&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Payment Session Created&quot;,&quot;sessionId&quot;:&quot;cs_test_b1CnRzosdmqOvtHt4I32b9m08W5gEhL96qpcZro8IXrJSIWGV2MJw0MWZA&quot;,&quot;sessionUrl&quot;:&quot;https://checkout.stripe.com/c/pay/cs_test_b1CnRzosdmqOvtHt4I32b9m08W5gEhL96qpcZro8IXrJSIWGV2MJw0MWZA#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbkZmfU9XYT1RamNubGZvfGhrUTNCd0Y1RDNBR3BVT2JkaDJoX3RLdVxHS08xVFxoTWZcYEpDTExHSE10QWN8MXRzM3NHN0NTNkhKQ39tQn02bVU1akg1NWI0b2x2UkByJyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl&quot;}" />
               <option name="time" value="2026-06-19 18:41:17" />
               <option name="uri" value="" />
@@ -191,7 +182,30 @@
         <entry key="8">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;name&quot;: &quot;iPhone 16&quot;,&#10;  &quot;description&quot;: &quot;a description&quot;,&#10;  &quot;price&quot;: 142,&#10;  &quot;currency&quot;: &quot;USD&quot;,&#10;  &quot;images&quot;: [&#10;    {&#10;      &quot;url&quot;: &quot;https://www.google.co&quot;,&#10;      &quot;isPrimary&quot;: false,&#10;      &quot;sortOrder&quot;: &quot;1&quot;&#10;    }&#10;  ],&#10;  &quot;inventory&quot;: {&#10;    &quot;quantity&quot;: 100,&#10;    &quot;quantityReserved&quot;: 5,&#10;    &quot;quantityAvailable&quot;: 95&#10;  },&#10;  &quot;status&quot;: &quot;ACTIVE&quot;,&#10;  &quot;category&quot;: {&#10;    &quot;name&quot;: &quot;Electronics&quot;,&#10;    &quot;parent&quot;: {&#10;      &quot;name&quot;: &quot;Cellphone&quot;,&#10;      &quot;parent&quot;: {&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8080/api/v1/user/all" />
+              <option name="id" value="8" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="[]" />
+              <option name="time" value="2026-06-22 16:55:55" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="9">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;email&quot;: &quot;email@user.com&quot;,&#10;  &quot;username&quot;: &quot;USER&quot;,&#10;  &quot;firstName&quot;: &quot;USER&quot;,&#10;  &quot;lastName&quot;: &quot;USER&quot;,&#10;  &quot;phone&quot;: &quot;786673384&quot;,&#10;  &quot;addresses&quot;: [&#10;    {&#10;      &quot;type&quot;: &quot;HOME&quot;,&#10;      &quot;line1&quot;: &quot;LINE1&quot;,&#10;      &quot;line2&quot;: &quot;LINE2&quot;,&#10;      &quot;city&quot;: &quot;CITY&quot;,&#10;      &quot;state&quot;: &quot;STATE&quot;,&#10;      &quot;zip&quot;: &quot;ZIP&quot;,&#10;      &quot;country&quot;: &quot;COUNTRY&quot;,&#10;      &quot;isDefault&quot;: false&#10;    }&#10;  ],&#10;  &quot;status&quot;: &quot;ACTIVE&quot;&#10;}" />
               <option name="contentType" value="application/json" />
               <option name="fileNames">
                 <array />
@@ -201,34 +215,14 @@
                   <entry key="Content-Type" value="application/json" />
                 </map>
               </option>
-              <option name="host" value="http://127.0.0.1:8082/api/v1/product" />
-              <option name="id" value="8" />
-              <option name="method" value="POST" />
-              <option name="res" value="{&quot;name&quot;:&quot;iPhone 16&quot;,&quot;description&quot;:&quot;a description&quot;,&quot;price&quot;:142.0,&quot;currency&quot;:&quot;USD&quot;,&quot;images&quot;:[{&quot;url&quot;:&quot;https://www.google.co&quot;,&quot;sortOrder&quot;:&quot;1&quot;,&quot;primary&quot;:false}],&quot;inventory&quot;:{&quot;quantity&quot;:100,&quot;quantityReserved&quot;:5,&quot;quantityAvailable&quot;:95},&quot;status&quot;:&quot;ACTIVE&quot;,&quot;category&quot;:{&quot;name&quot;:&quot;Electronics&quot;,&quot;parent&quot;:null}}" />
-              <option name="time" value="2026-05-15 13:14:48" />
-              <option name="uri" value="" />
-            </ReqHistory>
-          </value>
-        </entry>
-        <entry key="9">
-          <value>
-            <ReqHistory>
-              <option name="body" value="" />
-              <option name="contentType" value="application/x-www-form-urlencoded" />
-              <option name="fileNames">
-                <array />
-              </option>
-              <option name="host" value="http://127.0.0.1:8082/api/v1/product/60833556-99de-4547-9057-46fcd5b4a06a" />
+              <option name="host" value="http://127.0.0.1:8080/api/v1/user" />
               <option name="id" value="9" />
-              <option name="method" value="GET" />
+              <option name="method" value="POST" />
               <option name="params">
-                <map>
-                  <entry key="leastSigBits" value="0" />
-                  <entry key="mostSigBits" value="0" />
-                </map>
+                <map />
               </option>
-              <option name="res" value="{&quot;name&quot;:&quot;iPhone 16&quot;,&quot;description&quot;:&quot;a description&quot;,&quot;price&quot;:142.0,&quot;currency&quot;:&quot;USD&quot;,&quot;images&quot;:[{&quot;url&quot;:&quot;https://www.google.co&quot;,&quot;sortOrder&quot;:&quot;1&quot;,&quot;primary&quot;:false}],&quot;inventory&quot;:{&quot;quantity&quot;:100,&quot;quantityReserved&quot;:5,&quot;quantityAvailable&quot;:95},&quot;status&quot;:&quot;ACTIVE&quot;,&quot;category&quot;:{&quot;name&quot;:&quot;Electronics&quot;,&quot;parent&quot;:null}}" />
-              <option name="time" value="2026-05-15 13:15:39" />
+              <option name="res" value="{&quot;id&quot;:&quot;125a2c85-4533-47fc-9871-97015baeed59&quot;,&quot;email&quot;:&quot;email@user.com&quot;,&quot;username&quot;:&quot;USER&quot;,&quot;firstName&quot;:&quot;USER&quot;,&quot;lastName&quot;:&quot;USER&quot;,&quot;phone&quot;:&quot;786673384&quot;,&quot;addresses&quot;:[{&quot;type&quot;:&quot;HOME&quot;,&quot;line1&quot;:&quot;LINE1&quot;,&quot;line2&quot;:&quot;LINE2&quot;,&quot;city&quot;:&quot;CITY&quot;,&quot;state&quot;:&quot;STATE&quot;,&quot;zip&quot;:&quot;ZIP&quot;,&quot;country&quot;:&quot;COUNTRY&quot;,&quot;isDefault&quot;:false}],&quot;status&quot;:&quot;ACTIVE&quot;}" />
+              <option name="time" value="2026-06-22 16:57:08" />
               <option name="uri" value="" />
             </ReqHistory>
           </value>
@@ -241,17 +235,17 @@
               <option name="fileNames">
                 <array />
               </option>
-              <option name="host" value="http://127.0.0.1:8082/api/v1/product/60833556-99de-4547-9057-46fcd5b4a06a" />
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8080/api/v1/user/all" />
               <option name="id" value="10" />
               <option name="method" value="GET" />
               <option name="params">
-                <map>
-                  <entry key="leastSigBits" value="0" />
-                  <entry key="mostSigBits" value="0" />
-                </map>
+                <map />
               </option>
-              <option name="res" value="{&quot;name&quot;:&quot;iPhone 16&quot;,&quot;description&quot;:&quot;a description&quot;,&quot;price&quot;:142.0,&quot;currency&quot;:&quot;USD&quot;,&quot;images&quot;:[{&quot;url&quot;:&quot;https://www.google.co&quot;,&quot;sortOrder&quot;:&quot;1&quot;,&quot;primary&quot;:false}],&quot;inventory&quot;:{&quot;quantity&quot;:100,&quot;quantityReserved&quot;:5,&quot;quantityAvailable&quot;:95},&quot;status&quot;:&quot;ACTIVE&quot;,&quot;category&quot;:{&quot;name&quot;:&quot;Electronics&quot;,&quot;parent&quot;:null}}" />
-              <option name="time" value="2026-05-15 13:17:10" />
+              <option name="res" value="[{&quot;id&quot;:&quot;125a2c85-4533-47fc-9871-97015baeed59&quot;,&quot;email&quot;:&quot;email@user.com&quot;,&quot;username&quot;:&quot;USER&quot;,&quot;firstName&quot;:&quot;USER&quot;,&quot;lastName&quot;:&quot;USER&quot;,&quot;phone&quot;:&quot;786673384&quot;,&quot;addresses&quot;:[{&quot;type&quot;:&quot;HOME&quot;,&quot;line1&quot;:&quot;LINE1&quot;,&quot;line2&quot;:&quot;LINE2&quot;,&quot;city&quot;:&quot;CITY&quot;,&quot;state&quot;:&quot;STATE&quot;,&quot;zip&quot;:&quot;ZIP&quot;,&quot;country&quot;:&quot;COUNTRY&quot;,&quot;isDefault&quot;:false}],&quot;status&quot;:&quot;ACTIVE&quot;}]" />
+              <option name="time" value="2026-06-22 16:57:17" />
               <option name="uri" value="" />
             </ReqHistory>
           </value>
@@ -260,22 +254,21 @@
           <value>
             <ReqHistory>
               <option name="body" value="" />
-              <option name="contentType" value="multipart/form-data" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
-                <array>
-                  <option value="$USER_HOME$/OneDrive/Pictures/New folder/2025-12-01 14_48_13-Greenshot.png" />
-                </array>
+                <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="multipart/form-data" />
-                </map>
+                <map />
               </option>
-              <option name="host" value="http://127.0.0.1:8082/upload" />
+              <option name="host" value="http://127.0.0.1:8082/api/v1/products/all" />
               <option name="id" value="11" />
-              <option name="method" value="POST" />
-              <option name="res" value="Uploaded as 62ea0c17-25d5-44df-879d-d2db664aa298_2025-12-01 14_48_13-Greenshot.png" />
-              <option name="time" value="2026-05-15 15:33:27" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="[]" />
+              <option name="time" value="2026-06-22 17:18:14" />
               <option name="uri" value="" />
             </ReqHistory>
           </value>
@@ -288,11 +281,17 @@
               <option name="fileNames">
                 <array />
               </option>
-              <option name="host" value="http://127.0.0.1:8082/api/v1/product" />
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8082/api/v1/products/all" />
               <option name="id" value="12" />
               <option name="method" value="GET" />
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon May 18 14:03:49 SAST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Method Not Allowed, status=405).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-05-18 14:03:50" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="[{&quot;name&quot;:&quot;iPhone&quot;,&quot;description&quot;:&quot;Description&quot;,&quot;price&quot;:1250.0,&quot;currency&quot;:&quot;USD&quot;,&quot;images&quot;:[{&quot;url&quot;:&quot;http://localhost:9000/products/b0bffdd9-4217-4fba-8844-d8af63168746.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20260622T152056Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Credential=minioadmin%2F20260622%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=4131bca67b12dda886a635263e9ee2ec009839a89ee92c403197aa7e1edd798a&quot;,&quot;sortOrder&quot;:&quot;0&quot;,&quot;primary&quot;:false}],&quot;inventory&quot;:{&quot;quantity&quot;:100,&quot;quantityReserved&quot;:0,&quot;quantityAvailable&quot;:100},&quot;status&quot;:&quot;ACTIVE&quot;,&quot;category&quot;:{&quot;name&quot;:&quot;Electronics&quot;,&quot;parent&quot;:null}}]" />
+              <option name="time" value="2026-06-22 17:20:56" />
               <option name="uri" value="" />
             </ReqHistory>
           </value>
@@ -305,11 +304,17 @@
               <option name="fileNames">
                 <array />
               </option>
-              <option name="host" value="http://127.0.0.1:8082/api/v1/products/all" />
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8080/api/v1/user/all" />
               <option name="id" value="13" />
               <option name="method" value="GET" />
-              <option name="res" value="[{&quot;name&quot;:&quot;iPhone&quot;,&quot;description&quot;:&quot;Description&quot;,&quot;price&quot;:1250.0,&quot;currency&quot;:&quot;USD&quot;,&quot;images&quot;:[{&quot;url&quot;:&quot;http://products.localhost:9000/546704e3-d3ca-4ac2-b4cd-7a48ac3db854.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20260515T181730Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Credential=minioadmin%2F20260515%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=11e590b03359e9c4413f24a3192d4ae26f9a93ee4dcfec2b3e0ea40e68304d9a&quot;,&quot;sortOrder&quot;:&quot;0&quot;,&quot;primary&quot;:false},{&quot;url&quot;:&quot;http://products.localhost:9000/eda80589-aff1-4f0a-a127-cea19ff9265c.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20260515T181730Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Credential=minioadmin%2F20260515%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=5475210388768c4b266c28967bf0b2a7bf494e1b2b0814fddace4142124e80a3&quot;,&quot;sortOrder&quot;:&quot;0&quot;,&quot;primary&quot;:false}],&quot;inventory&quot;:{&quot;quantity&quot;:100,&quot;quantityReserved&quot;:110,&quot;quantityAvailable&quot;:110},&quot;status&quot;:&quot;ACTIVE&quot;,&quot;category&quot;:{&quot;name&quot;:&quot;Electronics&quot;,&quot;parent&quot;:null}},{&quot;name&quot;:&quot;iPhone&quot;,&quot;description&quot;:&quot;Description&quot;,&quot;price&quot;:1250.0,&quot;currency&quot;:&quot;USD&quot;,&quot;images&quot;:[{&quot;url&quot;:&quot;http://products.localhost:9000/23b693c1-3592-4206-831a-09d16d61c035.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20260515T181925Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Credential=minioadmin%2F20260515%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=9a49ba9d841ab7b1b9147d611a04f800bb488a45e0dfa1eb2af10969e699b259&quot;,&quot;sortOrder&quot;:&quot;0&quot;,&quot;primary&quot;:false},{&quot;url&quot;:&quot;http://products.localhost:9000/00ced287-2c37-4144-a490-428c54e1bb33.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20260515T181926Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Credential=minioadmin%2F20260515%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=81394f3dcf4cd57ecfd9dcd73edd57809cb4dd2a9ebdbd86980e223028c2e553&quot;,&quot;sortOrder&quot;:&quot;0&quot;,&quot;primary&quot;:false},{&quot;url&quot;:&quot;http://products.localhost:9000/63ed00a4-5ee2-4c4a-a806-671e71ebf3eb.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20260515T181926Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Credential=minioadmin%2F20260515%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=e342811939a6fdb3821e703fbcd3de70a3433f8cf1bfd0b685dc615e60dae9cf&quot;,&quot;sortOrder&quot;:&quot;0&quot;,&quot;primary&quot;:false}],&quot;inventory&quot;:{&quot;quantity&quot;:100,&quot;quantityReserved&quot;:110,&quot;quantityAvailable&quot;:110},&quot;status&quot;:&quot;ACTIVE&quot;,&quot;category&quot;:{&quot;name&quot;:&quot;Electronics&quot;,&quot;parent&quot;:null}},{&quot;name&quot;:&quot;iPhone&quot;,&quot;description&quot;:&quot;Description&quot;,&quot;price&quot;:1250.0,&quot;currency&quot;:&quot;USD&quot;,&quot;images&quot;:[{&quot;url&quot;:&quot;http://products.localhost:9000/20e739b2-24cc-45d8-b4a5-b712e2934555.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20260518T114636Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Credential=minioadmin%2F20260518%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=cd6272f020f079fb29321b7f7c6195ef4bad6cdc966d7270319a12c4e51d4eed&quot;,&quot;sortOrder&quot;:&quot;0&quot;,&quot;primary&quot;:false},{&quot;url&quot;:&quot;http://products.localhost:9000/0df02c7f-ba85-4785-80d7-63b172a5e188.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20260518T114636Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Credential=minioadmin%2F20260518%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=9e26d5933a16fa4937e129a625be510c2da71ed9ca41a39117fff3efede3812e&quot;,&quot;sortOrder&quot;:&quot;0&quot;,&quot;primary&quot;:false},{&quot;url&quot;:&quot;http://products.localhost:9000/bb692434-94e2-4783-bffe-18c193cd0c43.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20260518T114637Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Credential=minioadmin%2F20260518%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=967f0251bd4f4aa432caa6917623deb9f7f501c9d6edbcfb261fa0cbf4991d62&quot;,&quot;sortOrder&quot;:&quot;0&quot;,&quot;primary&quot;:false}],&quot;inventory&quot;:{&quot;quantity&quot;:100,&quot;quantityReserved&quot;:110,&quot;quantityAvailable&quot;:110},&quot;status&quot;:&quot;ACTIVE&quot;,&quot;category&quot;:{&quot;name&quot;:&quot;Electronics&quot;,&quot;parent&quot;:null}}]" />
-              <option name="time" value="2026-05-18 14:06:46" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="[{&quot;id&quot;:&quot;125a2c85-4533-47fc-9871-97015baeed59&quot;,&quot;email&quot;:&quot;email@user.com&quot;,&quot;username&quot;:&quot;USER&quot;,&quot;firstName&quot;:&quot;USER&quot;,&quot;lastName&quot;:&quot;USER&quot;,&quot;phone&quot;:&quot;786673384&quot;,&quot;addresses&quot;:[{&quot;type&quot;:&quot;HOME&quot;,&quot;line1&quot;:&quot;LINE1&quot;,&quot;line2&quot;:&quot;LINE2&quot;,&quot;city&quot;:&quot;CITY&quot;,&quot;state&quot;:&quot;STATE&quot;,&quot;zip&quot;:&quot;ZIP&quot;,&quot;country&quot;:&quot;COUNTRY&quot;,&quot;isDefault&quot;:false}],&quot;status&quot;:&quot;ACTIVE&quot;}]" />
+              <option name="time" value="2026-06-22 17:25:29" />
               <option name="uri" value="" />
             </ReqHistory>
           </value>
@@ -317,7 +322,7 @@
         <entry key="14">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;email&quot;: &quot;user@email.com&quot;,&#10;  &quot;username&quot;: &quot;user&quot;,&#10;  &quot;firstName&quot;: &quot;user&quot;,&#10;  &quot;lastName&quot;: &quot;user&quot;,&#10;  &quot;phone&quot;: &quot;786673384&quot;,&#10;  &quot;addresses&quot;: [&#10;    {&#10;      &quot;type&quot;: &quot;HOME&quot;,&#10;      &quot;line1&quot;: &quot;LINE1&quot;,&#10;      &quot;line2&quot;: &quot;LINE2&quot;,&#10;      &quot;city&quot;: &quot;CITY&quot;,&#10;      &quot;state&quot;: &quot;STATE&quot;,&#10;      &quot;zip&quot;: &quot;00000&quot;,&#10;      &quot;country&quot;: &quot;COUNTRY&quot;,&#10;      &quot;isDefault&quot;: false&#10;    }&#10;  ],&#10;  &quot;status&quot;: &quot;ACTIVE&quot;&#10;}" />
+              <option name="body" value="{&#10;  &quot;userId&quot;: &quot;125a2c85-4533-47fc-9871-97015baeed59&quot;,&#10;  &quot;status&quot;: &quot;CREATED&quot;,&#10;  &quot;orderItems&quot;: [&#10;    {&#10;      &quot;productId&quot;: &quot;b35b689c-e98d-4699-ae75-80deb2809b08&quot;,&#10;      &quot;productName&quot;: &quot;iPhone&quot;,&#10;      &quot;price&quot;: 1250,&#10;      &quot;quantity&quot;: 2,&#10;      &quot;subtotal&quot;: 0&#10;    }&#10;  ],&#10;  &quot;totalAmount&quot;: 1500,&#10;  &quot;currency&quot;: &quot;GBP&quot;&#10;}" />
               <option name="contentType" value="application/json" />
               <option name="fileNames">
                 <array />
@@ -327,11 +332,14 @@
                   <entry key="Content-Type" value="application/json" />
                 </map>
               </option>
-              <option name="host" value="http://127.0.0.1:8080/api/v1/user" />
+              <option name="host" value="http://127.0.0.1:8084/api/v1/orders" />
               <option name="id" value="14" />
               <option name="method" value="POST" />
-              <option name="res" value="{&quot;email&quot;:&quot;user@email.com&quot;,&quot;username&quot;:&quot;user&quot;,&quot;firstName&quot;:&quot;user&quot;,&quot;lastName&quot;:&quot;user&quot;,&quot;phone&quot;:&quot;786673384&quot;,&quot;addresses&quot;:[{&quot;type&quot;:&quot;HOME&quot;,&quot;line1&quot;:&quot;LINE1&quot;,&quot;line2&quot;:&quot;LINE2&quot;,&quot;city&quot;:&quot;CITY&quot;,&quot;state&quot;:&quot;STATE&quot;,&quot;zip&quot;:&quot;00000&quot;,&quot;country&quot;:&quot;COUNTRY&quot;,&quot;isDefault&quot;:false}],&quot;status&quot;:&quot;ACTIVE&quot;}" />
-              <option name="time" value="2026-05-21 15:37:02" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="" />
+              <option name="time" value="2026-06-22 17:27:57" />
               <option name="uri" value="" />
             </ReqHistory>
           </value>
@@ -344,11 +352,17 @@
               <option name="fileNames">
                 <array />
               </option>
-              <option name="host" value="http://127.0.0.1:8082/api/v1/products/all" />
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8084/api/v1/orders/all" />
               <option name="id" value="15" />
               <option name="method" value="GET" />
-              <option name="res" value="[]" />
-              <option name="time" value="2026-05-23 21:20:52" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Jun 22 17:28:19 SAST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
+              <option name="time" value="2026-06-22 17:28:19" />
               <option name="uri" value="" />
             </ReqHistory>
           </value>
@@ -356,41 +370,7 @@
         <entry key="16">
           <value>
             <ReqHistory>
-              <option name="body" value="" />
-              <option name="contentType" value="application/x-www-form-urlencoded" />
-              <option name="fileNames">
-                <array />
-              </option>
-              <option name="host" value="http://127.0.0.1:8082/api/v1/products/all" />
-              <option name="id" value="16" />
-              <option name="method" value="GET" />
-              <option name="res" value="[{&quot;name&quot;:&quot;iPhone&quot;,&quot;description&quot;:&quot;Description&quot;,&quot;price&quot;:1250.0,&quot;currency&quot;:&quot;USD&quot;,&quot;images&quot;:[{&quot;url&quot;:&quot;http://localhost:9000/products/4876f0d1-9803-4b0a-a172-282661f5c6fe.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20260523T192107Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Credential=minioadmin%2F20260523%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=3f296bd134f2d91777473c5511ffac1956fbd23dc7c61725b7075a9c14f58ad2&quot;,&quot;sortOrder&quot;:&quot;0&quot;,&quot;primary&quot;:false}],&quot;inventory&quot;:{&quot;quantity&quot;:100,&quot;quantityReserved&quot;:110,&quot;quantityAvailable&quot;:110},&quot;status&quot;:&quot;ACTIVE&quot;,&quot;category&quot;:{&quot;name&quot;:&quot;Electronics&quot;,&quot;parent&quot;:null}}]" />
-              <option name="time" value="2026-05-23 21:21:08" />
-              <option name="uri" value="" />
-            </ReqHistory>
-          </value>
-        </entry>
-        <entry key="17">
-          <value>
-            <ReqHistory>
-              <option name="body" value="" />
-              <option name="contentType" value="application/x-www-form-urlencoded" />
-              <option name="fileNames">
-                <array />
-              </option>
-              <option name="host" value="http://127.0.0.1:8080/api/v1/user/all" />
-              <option name="id" value="17" />
-              <option name="method" value="GET" />
-              <option name="res" value="[{&quot;id&quot;:&quot;a652ab9f-b98f-4ae2-9945-56758e2eef0a&quot;,&quot;email&quot;:&quot;user@email.com&quot;,&quot;username&quot;:&quot;user&quot;,&quot;firstName&quot;:&quot;user&quot;,&quot;lastName&quot;:&quot;user&quot;,&quot;phone&quot;:&quot;786673384&quot;,&quot;addresses&quot;:[{&quot;type&quot;:&quot;HOME&quot;,&quot;line1&quot;:&quot;LINE1&quot;,&quot;line2&quot;:&quot;LINE2&quot;,&quot;city&quot;:&quot;CITY&quot;,&quot;state&quot;:&quot;STATE&quot;,&quot;zip&quot;:&quot;00000&quot;,&quot;country&quot;:&quot;COUNTRY&quot;,&quot;isDefault&quot;:false}],&quot;status&quot;:&quot;ACTIVE&quot;}]" />
-              <option name="time" value="2026-05-23 21:23:44" />
-              <option name="uri" value="" />
-            </ReqHistory>
-          </value>
-        </entry>
-        <entry key="18">
-          <value>
-            <ReqHistory>
-              <option name="body" value="{&#10;  &quot;userId&quot;:&quot;a652ab9f-b98f-4ae2-9945-56758e2eef0a&quot;,&#10;  &quot;lineItems&quot;: [&#10;    {&#10;      &quot;productId&quot;: &quot;8a356d7d-f0bf-46d4-8610-525d1510a173&quot;,&#10;      &quot;productName&quot;: &quot;iPhone&quot;,&#10;      &quot;price&quot;: 100,&#10;      &quot;quantity&quot;: 10&#10;    }&#10;  ],&#10;  &quot;currency&quot;: &quot;&quot;&#10;}" />
+              <option name="body" value="{&#10;  &quot;userId&quot;: &quot;125a2c85-4533-47fc-9871-97015baeed59&quot;,&#10;  &quot;status&quot;: &quot;CREATED&quot;,&#10;  &quot;orderItems&quot;: [&#10;    {&#10;      &quot;productId&quot;: &quot;b35b689c-e98d-4699-ae75-80deb2809b08&quot;,&#10;      &quot;productName&quot;: &quot;iPhone&quot;,&#10;      &quot;price&quot;: 1250,&#10;      &quot;quantity&quot;: 2,&#10;      &quot;subtotal&quot;: 0&#10;    }&#10;  ],&#10;  &quot;totalAmount&quot;: 1500,&#10;  &quot;currency&quot;: &quot;GBP&quot;&#10;}" />
               <option name="contentType" value="application/json" />
               <option name="fileNames">
                 <array />
@@ -400,12 +380,65 @@
                   <entry key="Content-Type" value="application/json" />
                 </map>
               </option>
-              <option name="host" value="http://127.0.0.1:8081" />
+              <option name="host" value="http://127.0.0.1:8084/api/v1/orders" />
+              <option name="id" value="16" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="" />
+              <option name="time" value="2026-06-22 17:36:21" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="17">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;userId&quot;: &quot;125a2c85-4533-47fc-9871-97015baeed59&quot;,&#10;  &quot;status&quot;: &quot;CREATED&quot;,&#10;  &quot;orderItems&quot;: [&#10;    {&#10;      &quot;productId&quot;: &quot;b35b689c-e98d-4699-ae75-80deb2809b08&quot;,&#10;      &quot;productName&quot;: &quot;iPhone&quot;,&#10;      &quot;price&quot;: 1250,&#10;      &quot;quantity&quot;: 2,&#10;      &quot;subtotal&quot;: 0&#10;    }&#10;  ],&#10;  &quot;totalAmount&quot;: 1500,&#10;  &quot;currency&quot;: &quot;GBP&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8084/api/v1/orders" />
+              <option name="id" value="17" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="" />
+              <option name="time" value="2026-06-22 17:38:38" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="18">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;userId&quot;: &quot;125a2c85-4533-47fc-9871-97015baeed59&quot;,&#10;  &quot;status&quot;: &quot;CREATED&quot;,&#10;  &quot;orderItems&quot;: [&#10;    {&#10;      &quot;productId&quot;: &quot;b35b689c-e98d-4699-ae75-80deb2809b08&quot;,&#10;      &quot;productName&quot;: &quot;iPhone&quot;,&#10;      &quot;price&quot;: 1250,&#10;      &quot;quantity&quot;: 2,&#10;      &quot;subtotal&quot;: 0&#10;    }&#10;  ],&#10;  &quot;totalAmount&quot;: 1500,&#10;  &quot;currency&quot;: &quot;GBP&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8084/api/v1/orders" />
               <option name="id" value="18" />
               <option name="method" value="POST" />
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Sat May 23 21:26:13 SAST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;div&gt;Command execution failed on MongoDB server with error 13 (Unauthorized): &amp;#39;Command aggregate requires authentication&amp;#39; on server localhost:27017. The full response is {&amp;quot;ok&amp;quot;: 0.0, &amp;quot;errmsg&amp;quot;: &amp;quot;Command aggregate requires authentication&amp;quot;, &amp;quot;code&amp;quot;: 13, &amp;quot;codeName&amp;quot;: &amp;quot;Unauthorized&amp;quot;}&lt;/div&gt;&lt;div style='white-space:pre-wrap;'&gt;org.springframework.data.mongodb.UncategorizedMongoDbException: Command execution failed on MongoDB server with error 13 (Unauthorized): &amp;#39;Command aggregate requires authentication&amp;#39; on server localhost:27017. The full response is {&amp;quot;ok&amp;quot;: 0.0, &amp;quot;errmsg&amp;quot;: &amp;quot;Command aggregate requires authentication&amp;quot;, &amp;quot;code&amp;quot;: 13, &amp;quot;codeName&amp;quot;: &amp;quot;Unauthorized&amp;quot;}&#10;&#9;at org.springframework.data.mongodb.core.MongoExceptionTranslator.doTranslateException(MongoExceptionTranslator.java:150)&#10;&#9;at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:72)&#10;&#9;at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:3170)&#10;&#9;at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:628)&#10;&#9;at org.springframework.data.mongodb.core.MongoTemplate.doExactCount(MongoTemplate.java:1319)&#10;&#9;at org.springframework.data.mongodb.core.MongoTemplate.doCount(MongoTemplate.java:1286)&#10;&#9;at org.springframework.data.mongodb.core.MongoTemplate$ExistsCallback.doInCollection(MongoTemplate.java:3279)&#10;&#9;at org.springframework.data.mongodb.core.MongoTemplate$ExistsCallback.doInCollection(MongoTemplate.java:3262)&#10;&#9;at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:626)&#10;&#9;at org.springframework.data.mongodb.core.MongoTemplate.exists(MongoTemplate.java:902)&#10;&#9;at org.springframework.data.mongodb.core.ExecutableFindOperationSupport$ExecutableFindSupport.exists(ExecutableFindOperationSupport.java:180)&#10;&#9;at org.springframework.data.mongodb.repository.query.AbstractMongoQuery.lambda$getExecution$5(AbstractMongoQuery.java:199)&#10;&#9;at org.springframework.data.mongodb.repository.query.AbstractMongoQuery.doExecute(AbstractMongoQuery.java:146)&#10;&#9;at org.springframework.data.mongodb.repository.query.AbstractMongoQuery.execute(AbstractMongoQuery.java:119)&#10;&#9;at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:169)&#10;&#9;at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)&#10;&#9;at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:167)&#10;&#9;at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:146)&#10;&#9;at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)&#10;&#9;at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)&#10;&#9;at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)&#10;&#9;at org.springframework.data.mongodb.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:130)&#10;&#9;at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)&#10;&#9;at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:222)&#10;&#9;at jdk.proxy3/jdk.proxy3.$Proxy72.existsCartByUserId(Unknown Source)&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:565)&#10;&#9;at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)&#10;&#9;at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)&#10;&#9;at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)&#10;&#9;at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135)&#10;&#9;at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)&#10;&#9;at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:222)&#10;&#9;at jdk.proxy3/jdk.proxy3.$Proxy72.existsCartByUserId(Unknown Source)&#10;&#9;at com.marcusehocodes.cart_service.service.impl.CartServiceImpl.createCart(CartServiceImpl.java:35)&#10;&#9;at com.marcusehocodes.cart_service.controller.CartController.createCart(CartController.java:23)&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:565)&#10;&#9;at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)&#10;&#9;at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)&#10;&#9;at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)&#10;&#9;at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)&#10;&#9;at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)&#10;&#9;at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)&#10;&#9;at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)&#10;&#9;at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)&#10;&#9;at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)&#10;&#9;at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)&#10;&#9;at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)&#10;&#9;at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)&#10;&#9;at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)&#10;&#9;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)&#10;&#9;at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)&#10;&#9;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)&#10;&#9;at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)&#10;&#9;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)&#10;&#9;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)&#10;&#9;at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)&#10;&#9;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)&#10;&#9;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)&#10;&#9;at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)&#10;&#9;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)&#10;&#9;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)&#10;&#9;at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)&#10;&#9;at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)&#10;&#9;at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)&#10;&#9;at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)&#10;&#9;at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)&#10;&#9;at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)&#10;&#9;at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)&#10;&#9;at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)&#10;&#9;at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)&#10;&#9;at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)&#10;&#9;at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)&#10;&#9;at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)&#10;&#9;at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)&#10;&#9;at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)&#10;&#9;at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)&#10;&#9;at java.base/java.lang.Thread.run(Thread.java:1474)&#10;Caused by: com.mongodb.MongoCommandException: Command execution failed on MongoDB server with error 13 (Unauthorized): &amp;#39;Command aggregate requires authentication&amp;#39; on server localhost:27017. The full response is {&amp;quot;ok&amp;quot;: 0.0, &amp;quot;errmsg&amp;quot;: &amp;quot;Command aggregate requires authentication&amp;quot;, &amp;quot;code&amp;quot;: 13, &amp;quot;codeName&amp;quot;: &amp;quot;Unauthorized&amp;quot;}&#10;&#9;at com.mongodb.internal.connection.ProtocolHelper.getCommandFailureException(ProtocolHelper.java:210)&#10;&#9;at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:520)&#10;&#9;at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceiveInternal(InternalStreamConnection.java:448)&#10;&#9;at com.mongodb.internal.connection.InternalStreamConnection.lambda$sendAndReceive$0(InternalStreamConnection.java:375)&#10;&#9;at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:378)&#10;&#9;at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:111)&#10;&#9;at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:757)&#10;&#9;at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:60)&#10;&#9;at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:207)&#10;&#9;at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:112)&#10;&#9;at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:82)&#10;&#9;at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:74)&#10;&#9;at com.mongodb.internal.connection.DefaultServer$OperationCountTrackingConnection.command(DefaultServer.java:297)&#10;&#9;at com.mongodb.internal.operation.SyncOperationHelper.createReadCommandAndExecute(SyncOperationHelper.java:298)&#10;&#9;at com.mongodb.internal.operation.SyncOperationHelper.lambda$executeRetryableRead$3(SyncOperationHelper.java:197)&#10;&#9;at com.mongodb.internal.operation.SyncOperationHelper.lambda$withSourceAndConnection$0(SyncOperationHelper.java:131)&#10;&#9;at com.mongodb.internal.operation.SyncOperationHelper.withSuppliedResource(SyncOperationHelper.java:156)&#10;&#9;at com.mongodb.internal.operation.SyncOperationHelper.lambda$withSourceAndConnection$1(SyncOperationHelper.java:130)&#10;&#9;at com.mongodb.internal.operation.SyncOperationHelper.withSuppliedResource(SyncOperationHelper.java:156)&#10;&#9;at com.mongodb.internal.operation.SyncOperationHelper.withSourceAndConnection(SyncOperationHelper.java:129)&#10;&#9;at com.mongodb.internal.operation.SyncOperationHelper.lambda$executeRetryableRead$4(SyncOperationHelper.java:195)&#10;&#9;at com.mongodb.internal.operation.SyncOperationHelper.lambda$decorateReadWithRetries$13(SyncOperationHelper.java:317)&#10;&#9;at com.mongodb.internal.async.function.RetryingSyncSupplier.get(RetryingSyncSupplier.java:67)&#10;&#9;at com.mongodb.internal.operation.SyncOperationHelper.executeRetryableRead(SyncOperationHelper.java:201)&#10;&#9;at com.mongodb.internal.operation.SyncOperationHelper.executeRetryableRead(SyncOperationHelper.java:180)&#10;&#9;at com.mongodb.internal.operation.AggregateOperationImpl.execute(AggregateOperationImpl.java:196)&#10;&#9;at com.mongodb.internal.operation.AggregateOperation.execute(AggregateOperation.java:145)&#10;&#9;at com.mongodb.internal.operation.CountDocumentsOperation.execute(CountDocumentsOperation.java:130)&#10;&#9;at com.mongodb.internal.operation.CountDocumentsOperation.execute(CountDocumentsOperation.java:40)&#10;&#9;at com.mongodb.client.internal.MongoClusterImpl$OperationExecutorImpl.execute(MongoClusterImpl.java:426)&#10;&#9;at com.mongodb.client.internal.MongoCollectionImpl.executeCount(MongoCollectionImpl.java:247)&#10;&#9;at com.mongodb.client.internal.MongoCollectionImpl.countDocuments(MongoCollectionImpl.java:215)&#10;&#9;at org.springframework.data.mongodb.core.MongoTemplate.lambda$doExactCount$0(MongoTemplate.java:1320)&#10;&#9;at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:626)&#10;&#9;... 75 more&#10;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-05-23 21:26:13" />
-              <option name="uri" value="/api/v1/cart" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="" />
+              <option name="time" value="2026-06-22 18:17:47" />
+              <option name="uri" value="" />
             </ReqHistory>
           </value>
         </entry>
@@ -1080,8 +1113,8 @@
     </option>
     <option name="point">
       <AtomicInteger>
-        <option name="opaque" value="8" />
-        <option name="plain" value="8" />
+        <option name="opaque" value="19" />
+        <option name="plain" value="19" />
       </AtomicInteger>
     </option>
   </component>

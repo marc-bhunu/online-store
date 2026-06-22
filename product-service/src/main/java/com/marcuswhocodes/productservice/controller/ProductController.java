@@ -1,6 +1,7 @@
 package com.marcuswhocodes.productservice.controller;
 
 import com.marcuswhocodes.productservice.domain.dtos.ProductDto;
+import com.marcuswhocodes.productservice.domain.dtos.ReverseProductDto;
 import com.marcuswhocodes.productservice.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -22,6 +23,12 @@ public class ProductController {
     private ResponseEntity<List<ProductDto>> getAllProducts(){
         List<ProductDto> products = productService.getAllProducts();
         return new ResponseEntity<>(products, HttpStatus.OK);
+    }
+
+    @PostMapping("/reserve")
+    private ResponseEntity<Void> reserveProduct(@RequestBody List<ReverseProductDto> products){
+        productService.reserveProduct(products);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @PostMapping

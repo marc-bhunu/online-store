@@ -1,30 +1,32 @@
 package com.marcuswhocodes.orders_service.service;
 
-import com.marcuswhocodes.kafka.event.OrderEvent;
-import com.marcuswhocodes.kafka.event.PaymentRequestEvent;
 import com.marcuswhocodes.orders_service.clients.CartClient;
+import com.marcuswhocodes.orders_service.clients.PaymentClient;
+import com.marcuswhocodes.orders_service.clients.ProductClient;
 import com.marcuswhocodes.orders_service.clients.UserClient;
-import com.marcuswhocodes.orders_service.domain.dtos.cart.CartResponseDto;
+import com.marcuswhocodes.orders_service.domain.dtos.order.CreateOrderDto;
 import com.marcuswhocodes.orders_service.domain.dtos.order.OrderAddressDto;
 import com.marcuswhocodes.orders_service.domain.dtos.order.OrderDto;
 import com.marcuswhocodes.orders_service.domain.dtos.order.OrderItemDto;
+import com.marcuswhocodes.orders_service.domain.dtos.payment.PaymentItems;
+import com.marcuswhocodes.orders_service.domain.dtos.payment.PaymentRequest;
+import com.marcuswhocodes.orders_service.domain.dtos.product.ReverseProductDto;
 import com.marcuswhocodes.orders_service.domain.dtos.user.UserDto;
 import com.marcuswhocodes.orders_service.domain.entity.Order;
 import com.marcuswhocodes.orders_service.domain.entity.OrderAddress;
 import com.marcuswhocodes.orders_service.domain.entity.OrderItem;
 import com.marcuswhocodes.orders_service.domain.enums.AddressType;
 import com.marcuswhocodes.orders_service.domain.enums.OrderStatus;
+import com.marcuswhocodes.orders_service.domain.enums.PaymentMethod;
+import com.marcuswhocodes.orders_service.domain.enums.PaymentStatus;
+import com.marcuswhocodes.orders_service.domain.payment.StripeResponse;
 import com.marcuswhocodes.orders_service.repository.OrderRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.kafka.annotation.KafkaListener;
-import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
-import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Service
@@ -35,39 +37,58 @@ public class OrderService {
     private final CartClient cartClient;
     private final UserClient userClient;
     private final OrderRepository orderRepository;
-    private final KafkaTemplate<String, PaymentRequestEvent> paymentRequestEventKafkaTemplate;
+    private final ProductClient productClient;
+    private final PaymentClient paymentClient;
 
-    @KafkaListener(topics = "orders", groupId = "order-service-group")
-    public void createOrder(OrderEvent orderEvent){
-        CartResponseDto cartResponse = cartClient.getCartByUserId(orderEvent.userId());
-        UserDto userResponse = userClient.getUserById(orderEvent.userId());
-        if (userResponse == null || cartResponse == null) {
-            log.warn("Failed to create order for user: {}", userResponse != null ? userResponse.getEmail() : "Unknown");
-        } else {
-            Order order = createOrder(userResponse, cartResponse);
-            PaymentRequestEvent payment = PaymentRequestEvent.builder()
-                    .userId(order.getUserId())
-                    .idempotencyKey((order.getId().toString() + order.getUserId().toString()))
-                    .orderId(order.getId())
-                    .paymentMethod("CARD")
-                    .amount(order.getTotalAmount())
-                    .currency(order.getCurrency())
-                    .timestamp(Instant.now())
-                    .build();
-            paymentRequestEventKafkaTemplate.send("payment-requests", payment);
-            log.info("Order created successfully for user: {}", userResponse.getEmail());
-        }
+    public StripeResponse createOrder(CreateOrderDto createOrderDto) {
+        Order order = create(createOrderDto);
+
+        List<ReverseProductDto> reverseProducts = createOrderDto.getOrderItems().stream()
+                .map(item -> new ReverseProductDto(item.getProductId(), item.getQuantity()))
+                .collect(Collectors.toList());
+        productClient.reserveProduct(reverseProducts);
+        //send payment request via rest and respond with the stripe response
+
+        List<PaymentItems> paymentItems = order.getOrderItems().stream().map(item -> PaymentItems.builder()
+                        .amount(item.getPrice())
+                        .quantity(Long.valueOf(item.getQuantity()))
+                        .name(item.getProductName())
+                        .currency(order.getCurrency())
+                        .build())
+                .collect(Collectors.toList());
+
+        PaymentRequest paymentRequest = PaymentRequest.builder()
+                .orderId(order.getId())
+                .userId(order.getUserId())
+                .idempotencyKey(order.getId().toString() + order.getUserId().toString())
+                .sessionId(null)
+                .totalAmount(order.getTotalAmount())
+                .currency(order.getCurrency())
+                .status(PaymentStatus.INITIATED)
+                .paymentItems(paymentItems)
+                .paymentMethod(PaymentMethod.CARD)
+                .build();
+
+        //once the payment has been completed, send an order confirmation event to the kafka topic orders and then from there
+        //the order service will listen to the event and update the order status to completed
+        //delete the users cart after the order has been created
+        //send an order confirmation email to the user
+        return paymentClient.processPayment(paymentRequest);
+
     }
 
-    public Order createOrder(UserDto user, CartResponseDto cart) {
+    private Order create(CreateOrderDto createOrderDto) {
+        Long totalAmount = createOrderDto.getOrderItems().stream().map(item -> item.getPrice() * item.getQuantity()).reduce(0L, Long::sum);
+
         Order order = Order.builder()
-                .userId(cart.getUserId())
+                .userId(createOrderDto.getUserId())
                 .status(OrderStatus.CREATED)
                 .orderItems(new ArrayList<>())
                 .orderAddress(new OrderAddress())
-                .totalAmount(cart.getTotalPrice())
-                .currency(cart.getCurrency())
+                .totalAmount(totalAmount)
+                .currency(createOrderDto.getCurrency())
                 .build();
+        UserDto user = userClient.getUserById(createOrderDto.getUserId());
 
         OrderAddress orderAddress = user.getAddresses()
                 .stream()
@@ -83,8 +104,8 @@ public class OrderService {
                         .country(addressDto.getCountry()).build())
                 .findFirst().orElse(null);
 
-        List<OrderItem> orderItems = cart
-                .getLineItems()
+        List<OrderItem> orderItems = createOrderDto
+                .getOrderItems()
                 .stream()
                 .map(item -> OrderItem.builder()
                         .order(order)
