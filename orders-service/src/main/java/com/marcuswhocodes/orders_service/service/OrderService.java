@@ -1,5 +1,7 @@
 package com.marcuswhocodes.orders_service.service;
 
+import com.marcuswhocodes.kafka.event.NotificationEvent;
+import com.marcuswhocodes.kafka.event.OrderEvent;
 import com.marcuswhocodes.orders_service.clients.CartClient;
 import com.marcuswhocodes.orders_service.clients.PaymentClient;
 import com.marcuswhocodes.orders_service.clients.ProductClient;
@@ -23,6 +25,8 @@ import com.marcuswhocodes.orders_service.domain.payment.StripeResponse;
 import com.marcuswhocodes.orders_service.repository.OrderRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -39,6 +43,7 @@ public class OrderService {
     private final OrderRepository orderRepository;
     private final ProductClient productClient;
     private final PaymentClient paymentClient;
+    private final KafkaTemplate<String, NotificationEvent> kafkaTemplate;
 
     public StripeResponse createOrder(CreateOrderDto createOrderDto) {
         Order order = create(createOrderDto);
@@ -47,7 +52,6 @@ public class OrderService {
                 .map(item -> new ReverseProductDto(item.getProductId(), item.getQuantity()))
                 .collect(Collectors.toList());
         productClient.reserveProduct(reverseProducts);
-        //send payment request via rest and respond with the stripe response
 
         List<PaymentItems> paymentItems = order.getOrderItems().stream().map(item -> PaymentItems.builder()
                         .amount(item.getPrice())
@@ -69,8 +73,6 @@ public class OrderService {
                 .paymentMethod(PaymentMethod.CARD)
                 .build();
 
-        //once the payment has been completed, send an order confirmation event to the kafka topic orders and then from there
-        //the order service will listen to the event and update the order status to completed
         //delete the users cart after the order has been created
         //send an order confirmation email to the user
         return paymentClient.processPayment(paymentRequest);
@@ -125,6 +127,26 @@ public class OrderService {
         List<Order> orders = orderRepository.findAll();
         return mapToDto(orders);
     }
+
+
+    @KafkaListener(topics = "order-completed", groupId = "order-service-group")
+    public void updateOrder(OrderEvent orderEvent) {
+        log.info("order completed event received: {}", orderEvent);
+        Order order = orderRepository.findById(orderEvent.orderId()).orElse(null);
+        if (order == null) {
+            return;
+        }
+        order.setStatus(OrderStatus.CONFIRMED);
+        Order created = orderRepository.save(order);
+        if (created != null) {
+            kafkaTemplate.send("notifications", NotificationEvent.builder()
+                    .orderId(created.getId())
+                    .email("macbhunu@gmail.com")
+                    .status(created.getStatus())
+                    .build());
+        }
+    }
+
 
     private List<OrderDto> mapToDto(List<Order> orders) {
         return orders.stream().map(order -> OrderDto.builder()
