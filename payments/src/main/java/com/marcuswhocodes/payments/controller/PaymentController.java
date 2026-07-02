@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/v1/product")
+@RequestMapping("/api/v1/payment")
 public class PaymentController {
     private final StripeService stripeService;
 

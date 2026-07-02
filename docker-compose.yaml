@@ -36,6 +36,15 @@ services:
       POSTGRES_DB: payments_db
     ports:
       - "5435:5432"
+  notification-postgres:
+    image: postgres:latest
+    container_name: notification_db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: notification_db
+    ports:
+      - "5436:5432"
   mongodb:
     image: mongo:latest
     container_name: cart_db
