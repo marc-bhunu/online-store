@@ -1,4 +1,4 @@
-package com.marcuswhocodes.user_service.config;
+package com.marcusehocodes.cart_service.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;
@@ -10,11 +10,11 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class OpenApiConfig {
     @Bean
-    public OpenAPI userServiceApiDocs(){
+    public OpenAPI cartServiceApiDocs(){
         return new OpenAPI().info(
                 new Info()
-                        .title("User Service API")
-                        .description("User Service API for the online store API")
+                        .title("Cart Service API")
+                        .description("Cart Service API for the online store API")
                         .contact(getContact())
                         .license(getLicense())
                         .version("1.0.0")

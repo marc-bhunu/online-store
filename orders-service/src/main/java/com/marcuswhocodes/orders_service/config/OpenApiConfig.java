@@ -1,4 +1,4 @@
-package com.marcuswhocodes.user_service.config;
+package com.marcuswhocodes.orders_service.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;
@@ -10,11 +10,11 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class OpenApiConfig {
     @Bean
-    public OpenAPI userServiceApiDocs(){
+    public OpenAPI orderServiceApiDocs(){
         return new OpenAPI().info(
                 new Info()
-                        .title("User Service API")
-                        .description("User Service API for the online store API")
+                        .title("Order Service API")
+                        .description("Order Service API for the online store API")
                         .contact(getContact())
                         .license(getLicense())
                         .version("1.0.0")
