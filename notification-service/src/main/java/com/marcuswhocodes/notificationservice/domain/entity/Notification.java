@@ -18,7 +18,7 @@ public class Notification {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
     private UUID orderId;
-    private UUID userId;
+    private String email;
     private String message;
     private LocalDateTime createdAt;
 
